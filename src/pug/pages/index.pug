@@ -1,0 +1,14 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Webpack + pug'
+  - var description = 'Page description'
+  - var pageClass = 'index-page'
+
+block content
+  section
+    .container
+      +item('Text header', 'Some text')
+  section
+    .container
+      +item('Text header', 'Some text')
