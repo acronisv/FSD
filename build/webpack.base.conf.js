@@ -26,14 +26,14 @@ module.exports = {
         paths: PATHS
     },
     entry: {
-        app: PATHS.src
+        app: PATHS.src,
+        colors: `${PATHS.src}/pug/pages/colors/colors.js`
     },
     output: {
         path: PATHS.dist,
         filename: `${PATHS.assets}js/[name].js`,
         publicPath: '/'
     },
-    
     module: {
         rules:[
             {
@@ -139,11 +139,13 @@ module.exports = {
         // For using pug files
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/,'.html')}`
+            filename: `./${page.replace(/\.pug/,'.html')}`,
+            chunks: ['app']
         })),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/colors/colors.pug`,
             filename: './colors/colors.html',
+            chunks: ['colors'],
             inject: true
         })
 
