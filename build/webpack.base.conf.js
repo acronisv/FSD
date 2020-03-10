@@ -38,7 +38,10 @@ module.exports = {
         rules:[
             {
                 test: /\.pug$/,
-                loader: 'pug-loader'
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
             },
             {
                 test: /\.js$/,
@@ -137,7 +140,12 @@ module.exports = {
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
             filename: `./${page.replace(/\.pug/,'.html')}`
-        }))
+        })),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/colors/colors.pug`,
+            filename: './colors/colors.html',
+            inject: true
+        })
 
         // For using standart html files
         // ...PAGES.map(page => new HtmlWebpackPlugin({
