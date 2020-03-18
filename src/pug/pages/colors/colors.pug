@@ -5,5 +5,40 @@ block variables
     - var description = "Colors & types page"
 
 block content
-    .colors-kit colors
-    .headings headings
+    .container
+        .page-types
+            .colors
+                .colors__item-wrap
+                    .colors__item.colors__item--shade100
+                    +colors('Dark Shade 100%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade75
+                    +colors('Dark Shade 75%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade50
+                    +colors('Dark Shade 50%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade25
+                    +colors('Dark Shade 25%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade5
+                    +colors('Dark Shade 5%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--purple
+                    +colors('Purple', '#BC9CFF')
+                .colors__item-wrap
+                    .colors__item.colors__item--green
+                    +colors('Green', '#6FCF97')
+            .headings
+                .headings__item
+                    span.headings__description.headings__description--h1 H1
+                    h1 This one is the sub-section or widget title
+                .headings__item
+                    span.headings__description.headings__description--h2 H2
+                    h2 Next one is the item title inside widgets
+                .headings__item
+                    span.headings__description.headings__description--h3 H3
+                    h3 This is a label or CTA text
+                .headings__item
+                    span.headings__description.headings__description--p Body
+                    p This is the body text which is used for most<br> of the design, like paragraphs, lists, etc.

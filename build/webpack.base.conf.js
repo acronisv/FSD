@@ -145,7 +145,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/colors/colors.pug`,
             filename: './colors/colors.html',
-            chunks: ['colors'],
+            chunks: ['colors', 'app'],
             inject: true
         })
 

@@ -45,6 +45,22 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: $h1FontSize;
+}
+
+h2 {
+  font-size: $h2FontSize;
+}
+
+h3 {
+  font-size: $h3FontSize;
+}
+
+p {
+  font-size: $mainFontSize;
+}
+
 a {
   text-decoration: none;
 }

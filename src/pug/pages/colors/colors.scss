@@ -1,0 +1,50 @@
+.page-types {
+    padding: 145px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.colors {
+    &__item {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background: #1F2041;
+        margin-right: 40px;
+        &-wrap {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        &-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    &__item--shade75{
+        opacity: 0.75;
+    }
+    &__item--shade50{
+        opacity: 0.5
+    }
+    &__item--shade5{
+        opacity: 0.05;
+    }
+    &__item--green{
+        background: #BC9CFF;
+    }
+    &__item--purple{
+        background: #6FCF97;
+    }
+}
+.headings{
+    &__item {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__description {
+        margin-right: 30px;
+        text-align: right;
+        width: 40px;
+        color: rgba(31, 32, 65, 0.25);
+    }
+}
