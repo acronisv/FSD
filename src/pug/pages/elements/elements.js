@@ -1,1 +1,2 @@
-import './elements.scss'
+import './elements.scss';
+import './../../components/input/input.js';

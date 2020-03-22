@@ -27,7 +27,8 @@ module.exports = {
     },
     entry: {
         app: PATHS.src,
-        colors: `${PATHS.src}/pug/pages/colors/colors.js`
+        colors: `${PATHS.src}/pug/pages/colors/colors.js`,
+        elements: `${PATHS.src}/pug/pages/elements/elements.js`
     },
     output: {
         path: PATHS.dist,
