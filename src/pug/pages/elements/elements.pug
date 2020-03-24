@@ -9,7 +9,10 @@ block variables
 block content
     .container
         .form-elements
-            .form-elements__input
-                +input('text field','name1','Email')
-            .form-elements__input
-                +input('text field', 'name2', 'This is pretty awesome')
+            .form-elements__wrapper
+                .form-elements__item
+                    +input('text field','name1','Email')
+                .form-elements__item
+                    +input('text field', 'name2', 'This is pretty awesome')
+                .form-elements__item
+                    +dropdown('dropdown', 'name3', 'mask')

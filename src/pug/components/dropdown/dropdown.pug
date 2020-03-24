@@ -1,2 +1,6 @@
-mixin dropdown(desc, note)
-    select
+mixin dropdown(label, name, text)
+    .dropdown__wrapper
+        label.dropdown__label(for=name)= label
+        select.dropdown__elem(id=name)
+            option(value)= 'vab'
+            option(value)= 'vab2'
