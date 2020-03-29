@@ -11,8 +11,15 @@ block content
         .form-elements
             .form-elements__wrapper
                 .form-elements__item
-                    +input('text field','name1','Email')
+                    +input('text field','name1', 'textfield1', 'Email')
                 .form-elements__item
-                    +input('text field', 'name2', 'This is pretty awesome')
+                    +input('text field', 'name2', 'textfield2', 'This is pretty awesome')
                 .form-elements__item
                     +dropdown('dropdown', 'name3', 'mask')
+                .form-elements__item
+                    +input('masked text field', 'name1', 'masked-textfield', 'ДД.ММ.ГГГГ')
+            .form-elements__wrapper
+                .form-elements__item
+                    +dropdown('date dropdown', 'name3', 'mask')
+                .form-elements__item
+                    +dropdown('date dropdown', 'name3', 'mask')
