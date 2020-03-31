@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "jquery": "^3.4.1"
   },
   "devDependencies": {

@@ -1,6 +1,7 @@
 extend ../../layout/main
 include ../../components/dropdown/dropdown
 include ../../components/input/input
+include ../../components/calendar/calendar
 
 block variables
     - var title = "Form elements"
@@ -20,6 +21,4 @@ block content
                     +input('masked text field', 'name1', 'masked-textfield', 'ДД.ММ.ГГГГ')
             .form-elements__wrapper
                 .form-elements__item
-                    +dropdown('date dropdown', 'name3', 'mask')
-                .form-elements__item
-                    +dropdown('date dropdown', 'name3', 'mask')
+                    +calendar()
