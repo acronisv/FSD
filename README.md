@@ -13,7 +13,6 @@ npm run build
 ```
 
 ## Used libraries
-``` bash
- - [jQuery Masked Input Plugin](https://github.com/digitalBush/jquery.maskedinput)
- - [jQuery datepicker](https://github.com/t1m0n/air-datepicker)
-```
+
+- [jQuery Masked Input Plugin](https://github.com/digitalBush/jquery.maskedinput)
+- [jQuery datepicker](https://github.com/t1m0n/air-datepicker)

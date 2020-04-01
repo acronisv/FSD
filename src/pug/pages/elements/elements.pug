@@ -12,13 +12,17 @@ block content
         .form-elements
             .form-elements__wrapper
                 .form-elements__item
-                    +input('text field','name1', 'textfield1', 'Email')
+                    +input({label:'text field', name:'name1', id:'textfield-id1', placeholder:'Email'})
                 .form-elements__item
-                    +input('text field', 'name2', 'textfield2', 'This is pretty awesome')
+                    +input({label:'text field', name:'input2', id:'textfield-id2', placeholder:'This is pretty awesome'})
                 .form-elements__item
-                    +dropdown('dropdown', 'name3', 'mask')
+                    +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1'})
                 .form-elements__item
-                    +input('masked text field', 'name1', 'masked-textfield', 'ДД.ММ.ГГГГ')
-            .form-elements__wrapper
+                    +input({label:'masked text field', name:'name1', id:'masked-textfield', placeholder:'ДД.ММ.ГГГГ'})
+            .form-elements__wrapper.form-elements__wrapper--group2
                 .form-elements__item
-                    +calendar()
+                    +calendar({type:'dual', labelFrom:'date dropdown', labelTo:'date dropdown'})
+                .form-elements__item
+                    +calendar({label:'filter date dropdown'})
+                .form-elements__item
+                    +input({})

@@ -1,6 +1,6 @@
-mixin dropdown(label, name, text)
+mixin dropdown({label='label', id, name})
     .dropdown__wrapper
         label.dropdown__label(for=name)= label
-        select.dropdown__elem(id=name)
-            option(value)= 'vab'
+        select.dropdown__elem(id=id)
+            option(value disabled selected)= 'Сколько гостей'
             option(value)= 'vab2'

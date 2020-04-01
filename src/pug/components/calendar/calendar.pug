@@ -1,8 +1,14 @@
-mixin calendar()
-    .calendar.js-calendar
-        .calendar__item-wrap
-            label.calendar__label
-            input.calendar__elem.js-calendar__elem-start(type="text", name='start')
-        .calendar__item-wrap
-            label.calendar__label
-            input.calendar__elem.js-calendar__elem-end
+mixin calendar({type, label='filter date dropdown', labelFrom='date dropdown', labelTo='date dropdown'})
+    if type==='dual'
+        .calendar.js-calendar
+            .calendar__item-wrap
+                label.calendar__label(for='calendar-input-start')= labelFrom
+                input.calendar__elem.js-calendar__elem-start(type="text", name='calendar-input-start', placeholder='ДД.ММ.ГГГГ')
+            .calendar__item-wrap
+                label.calendar__label(for='calendar-input-end')= labelTo
+                input.calendar__elem.js-calendar__elem-end(type="text", name='calendar-input-end', placeholder='ДД.ММ.ГГГГ')
+    else
+        .calendar.calendar--single.js-calendar
+            .calendar__item-wrap
+                label.calendar__label(for='calendar-input')= label
+                input.calendar__elem.js-calendar__elem(type="text", name='calendar-input', placeholder='ДД.ММ - ДД.ММ')

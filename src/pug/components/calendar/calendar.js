@@ -12,5 +12,10 @@ $('.js-calendar__elem-start').datepicker({
     multipleDatesSeparator: ' - '
 });
 
+$('.js-calendar__elem').datepicker({
+    range: true,
+    multipleDatesSeparator: ' - ',
+    dateFormat: 'd M'
+});
 // Доступ к экземпляру объекта
 //$('.js-calendar__elem-start').data('datepicker');
