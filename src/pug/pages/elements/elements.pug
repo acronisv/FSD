@@ -1,6 +1,7 @@
 extend ../../layout/main
 include ../../components/dropdown/dropdown
 include ../../components/input/input
+include ../../components/field-subscribe/field-subscribe
 include ../../components/calendar/calendar
 
 block variables
@@ -25,4 +26,6 @@ block content
                 .form-elements__item
                     +calendar({label:'filter date dropdown'})
                 .form-elements__item
-                    +input({})
+                    +field-subscribe({})
+                .form-elements__item
+                    +dropdown({label:'dropdown', name:'drop1'})

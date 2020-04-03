@@ -1,6 +1,26 @@
-mixin dropdown({label='label', id, name})
+mixin dropdown({label='label', id, name,option1='взрослые',option2='дети',option3='младенцы'})
     .dropdown__wrapper
         label.dropdown__label(for=name)= label
-        select.dropdown__elem(id=id)
-            option(value disabled selected)= 'Сколько гостей'
-            option(value)= 'vab2'
+        input.dropdown__elem(id=id)
+        .dropdown__options
+            .dropdown__options-row
+                .dropdown__name
+                    p.dropdown__text= option1
+                .dropdown__counter
+                    button.dropdown__btn-minus -
+                    span.dropdown__quantity 0
+                    button.dropdown__btn-plus +
+            .dropdown__options-row
+                .dropdown__name
+                    p.dropdown__text= option2
+                .dropdown__counter
+                    button.dropdown__btn-minus -
+                    span.dropdown__quantity 0
+                    button.dropdown__btn-plus +
+            .dropdown__options-row
+                .dropdown__name
+                    p.dropdown__text= option3
+                .dropdown__counter
+                    button.dropdown__btn-minus -
+                    span.dropdown__quantity 0
+                    button.dropdown__btn-plus +
