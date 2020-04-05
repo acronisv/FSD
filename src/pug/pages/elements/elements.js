@@ -5,9 +5,10 @@ import './../../components/dropdown/dropdown.js';
 import './../../components/calendar/calendar.js';
 import './../../../js/jquery.maskedinput.min.js';
 import './../../components/field-subscribe/field-subscribe.js';
+import './../../components/checkbox/checkbox.js';
 //1 пример
 $(function(){
-    $("#masked-textfield").mask("31.12.2999", {placeholder: "ДД.ММ.ГГГГ" });
+    $("#masked-textfield").mask("99.99.9999", {placeholder: "ДД.ММ.ГГГГ" });
 });
 
 console.log('elements');

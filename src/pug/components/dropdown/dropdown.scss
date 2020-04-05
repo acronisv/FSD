@@ -1,21 +1,45 @@
+@import './../../../assets/scss/utils/vars.scss';
 .dropdown {
     &__wrapper {
+        position: relative;
+    }
+
+    &__content {
         display: flex;
         flex-direction: column;
-        width: 320px;
         position: relative;
+        max-width: 320px;
     }
 
     &__elem {
         height: 44px;
-        background: #FFFFFF;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        background: transparent;
+        border: 1px solid $dark25;
         box-sizing: border-box;
         border-radius: 4px;
         padding: 13px 15px;
+        position: relative;
+        z-index:10;
+        color: $dark75;
 
+        &::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: $dark25;
+        }
+        &:hover + , &:focus +{
+            .dropdown__expand:after, .dropdown__expand:before {
+                background-color: $dark75;
+            }
+        }
         &:hover, &:focus {
-            border: 1px solid rgba(31, 32, 65, 0.5);
+            border: 1px solid $dark50;
+            &::placeholder{
+                color: $dark75;
+            }
+            
         }
     }
 
@@ -27,10 +51,47 @@
         margin-bottom: 5px;
     }
 
+    &__expand {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        &:before {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 21px;
+            left: 16px;
+            width: 8px;
+            height: 2px;
+            background-color: $dark50;
+            transform: rotate(45deg);
+        }
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 21px;
+            left: 21px;
+            width: 8px;
+            height: 2px;
+            background-color: $dark50;
+            transform: rotate(-45deg);
+        }
+    }
+
+    
+
     &__options {
+        position: absolute;
+        width: 100%;
         padding: 6px 7px 13px 15px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
+        border: 1px solid $dark50;
         border-top: none;
+        background-color: #fff;
+        display: none;
     }
 
     &__options-row {
@@ -48,7 +109,7 @@
     &__btn-minus, &__btn-plus {
         width: 30px;
         height: 30px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $dark25;
         box-sizing: border-box;
         background-color: transparent;
         border-radius: 22px;

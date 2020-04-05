@@ -1,14 +1,15 @@
+@import './../../../assets/scss/utils/vars.scss';
 .calendar {
     display: flex;
     justify-content: space-between;
-    width: 320px;
+    max-width: 320px;
 
     &--single{
-        .calendar__elem {
-            width: 266px;
+        .calendar__elem, .calendar__item-wrap {
+            width: 100%;
         }
     }
-
+ 
     &__label {
         text-transform: uppercase;
         font-weight: bold;
@@ -16,19 +17,54 @@
     }
 
     &__elem {
-        color: rgba(31, 32, 65, 0.75);
+        color: $dark75;
         width: 150px;
         height: 44px;
-        background: #FFFFFF;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        background: transparent;
+        border: 1px solid $dark25;
         box-sizing: border-box;
         border-radius: 4px;
         padding: 13px 15px;
+
     }
 
     &__item-wrap {
         display: flex;
         flex-direction: column;
+        position: relative; 
+    }
+
+    &__expand {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        z-index: -1;
+
+        &:before {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 21px;
+            left: 16px;
+            width: 8px;
+            height: 2px;
+            background-color: $dark50;
+            transform: rotate(45deg);
+        }
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 21px;
+            left: 21px;
+            width: 8px;
+            height: 2px;
+            background-color: $dark50;
+            transform: rotate(-45deg);
+        }
     }
 }
     

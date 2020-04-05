@@ -4,6 +4,8 @@
 
     &__wrapper {
         padding-bottom: 20px;
+        width: 320px;
+        
         &--group2 {
             .form-elements__item {
                 margin-bottom: 36px;
@@ -13,6 +15,9 @@
 
     &__item {
         margin-bottom: 20px;
-    }
 
+        &--small-width {
+            width: 266px;
+        }
+    }
 }

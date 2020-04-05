@@ -1,31 +1,33 @@
+@import './../../../assets/scss/utils/vars.scss';
 .subscribe {
     &__form {
         display: flex;
         flex-direction: column;
-        width: 266px;
+        max-width: 320px;
         position: relative;
     }
     &__elem {
         height: 44px;
-        background: #FFFFFF;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        background: transparent;
+        border: 1px solid $dark25;
         box-sizing: border-box;
         border-radius: 4px;
         padding: 13px 15px;
+        color: $dark75;
 
         &::placeholder {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 18px;
-            color: rgba(31, 32, 65, 0.25);
+            color: $dark25;
         }
 
-        &:hover {
+        &:hover, &:focus {
             &::placeholder{
-                color: rgba(31, 32, 65, 0.75);
+                color: $dark75;
             }
-            border: 1px solid rgba(31, 32, 65, 0.5);
+            border: 1px solid $dark50;
         }
     }
 

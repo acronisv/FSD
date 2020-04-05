@@ -1,0 +1,6 @@
+mixin checkbox({name='',title='Text', id='id'})
+    .checkbox__wrapper
+        .checkbox__row
+            input.checkbox__input(type='checkbox', id=id, name, checked)
+            label.checkbox__label(for=id)
+            span.checkbox__text= title

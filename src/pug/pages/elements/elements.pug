@@ -3,6 +3,7 @@ include ../../components/dropdown/dropdown
 include ../../components/input/input
 include ../../components/field-subscribe/field-subscribe
 include ../../components/calendar/calendar
+include ../../components/checkbox/checkbox
 
 block variables
     - var title = "Form elements"
@@ -17,15 +18,21 @@ block content
                 .form-elements__item
                     +input({label:'text field', name:'input2', id:'textfield-id2', placeholder:'This is pretty awesome'})
                 .form-elements__item
-                    +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1'})
+                    +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
                 .form-elements__item
                     +input({label:'masked text field', name:'name1', id:'masked-textfield', placeholder:'ДД.ММ.ГГГГ'})
             .form-elements__wrapper.form-elements__wrapper--group2
                 .form-elements__item
                     +calendar({type:'dual', labelFrom:'date dropdown', labelTo:'date dropdown'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--small-width
                     +calendar({label:'filter date dropdown'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--small-width
                     +field-subscribe({})
-                .form-elements__item
-                    +dropdown({label:'dropdown', name:'drop1'})
+                .form-elements__item.form-elements__item--small-width
+                    +dropdown({label:'dropdown', name:'drop1', placeholder:'Удобства'})
+                .form-elements__item.form-elements__item--small-width
+                    +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
+                .form-elements__item.form-elements__item--small-width
+                    +checkbox({title:'Завтрак', id:'id1'})
+                    +checkbox({title:'Письменный стол', id:'id2'})
+                    +checkbox({title:'Стул для кормления', id:'id3'})
