@@ -4,6 +4,7 @@ include ../../components/input/input
 include ../../components/field-subscribe/field-subscribe
 include ../../components/calendar/calendar
 include ../../components/checkbox/checkbox
+include ../../components/checkbox-list/checkbox-list
 
 block variables
     - var title = "Form elements"
@@ -33,6 +34,4 @@ block content
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
                 .form-elements__item.form-elements__item--small-width
-                    +checkbox({title:'Завтрак', id:'id1'})
-                    +checkbox({title:'Письменный стол', id:'id2'})
-                    +checkbox({title:'Стул для кормления', id:'id3'})
+                    +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
