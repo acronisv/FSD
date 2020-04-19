@@ -1,11 +1,76 @@
 @import './../../../assets/scss/utils/vars.scss';
 .checkbox-list {
-    &__title {
+    &__text {
         font-family: 'Montserrat';
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 17px;
+    }
+
+    &__title {
+        display: flex;
+    }
+
+    &__buttons {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__button {
+        &--open {
+            display: none;
+            &:before {
+                position: absolute;
+                display: block;
+                content: '';
+                top: 7px;
+                right: 20px;
+                width: 8px;
+                height: 2px;
+                background-color: $dark50;
+                transform: rotate(45deg);
+            }
+            &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                top: 7px;
+                right: 15px;
+                width: 8px;
+                height: 2px;
+                background-color: $dark50;
+                transform: rotate(-45deg);
+            }
+        }
+        &--close {
+            &:before {
+                position: absolute;
+                display: block;
+                content: '';
+                top: 7px;
+                right: 20px;
+                width: 8px;
+                height: 2px;
+                background-color: $dark50;
+                transform: rotate(-45deg);
+            }
+            &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                top: 7px;
+                right: 15px;
+                width: 8px;
+                height: 2px;
+                background-color: $dark50;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &__content {
+        display: block;
     }
 }
