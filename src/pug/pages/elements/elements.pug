@@ -5,6 +5,7 @@ include ../../components/field-subscribe/field-subscribe
 include ../../components/calendar/calendar
 include ../../components/checkbox/checkbox
 include ../../components/checkbox-list/checkbox-list
+include ../../components/information/information
 
 block variables
     - var title = "Form elements"
@@ -37,4 +38,6 @@ block content
                     +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
                 .form-elements__item.form-elements__item--small-width
                     +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
-                
+                .form-elements__item
+                    +information({title:'Комфорт', text:'Шумопоглощающие стены'})
+                    +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})

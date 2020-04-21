@@ -53,6 +53,14 @@
        font-weight: bold;
        font-style: normal;
 }
+@font-face {
+  font-family: 'Material Icons';
+  src: url('/assets/fonts/Montserrat/MaterialIcons/MaterialIcons-Regular.woff') format('woff'), // Pretty Modern Browsers
+  url('/assets/fonts/Montserrat/Bold/MaterialIcons-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+  url('/assets/fonts/Montserrat/Bold/MaterialIcons-Regular.svg') format('svg'); // Legacy iOS
+       font-weight: normal;
+       font-style: normal;
+}
 // 2. Example with mixin (example):
 // NOTE: do NOT use expansion (.woff, .svg etc) for path! Path will be '/assets/fonts/OpenSans/opensans';
 // NOTE-2: files required: `.woff, .woffs` (by default) OR `eot. .woff, .woffs, .svg, .ttf` if you use another mixin;
