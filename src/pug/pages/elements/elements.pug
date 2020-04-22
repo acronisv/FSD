@@ -38,6 +38,12 @@ block content
                     +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
                 .form-elements__item.form-elements__item--small-width
                     +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
-                .form-elements__item
+                .form-elements__item.form-elements__item--small-width
                     +information({title:'Комфорт', text:'Шумопоглощающие стены'})
                     +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
+            .form-elements__wrapper.form-elements__wrapper--group3
+                .form-elements__item.form-elements__item--small-width
+                    .form-elements__title= 'Checkbox Buttons'
+                    +checkbox({id:'cb_id1', title:'Можно курить'})
+                    +checkbox({id:'cb_id2', title:'Можно с питомцами'})
+                    +checkbox({id:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
