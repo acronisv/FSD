@@ -1,0 +1,41 @@
+@import './../../../assets/scss/utils/vars.scss';
+.radio {
+    &__input {
+        &:checked + .radio__label {
+            &:before {
+                border: 1px solid #BC9CFF;
+            }
+            &:after {
+                left: 6px;
+                top: 6px;
+                height: 6px;
+                width: 8px;
+                border-left: 2px solid #bc9cff;
+                border-bottom: 2px solid #bc9cff;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    &__label {
+        margin-right: 10px;
+        position: relative;
+        &:before {
+            content:'';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $dark25;
+            box-sizing: border-box;
+            border-radius: 4px
+        }
+        &:after {
+            top: 10px;
+            left:10px;
+            position: absolute;
+            content:'';
+            display: block;
+            width: 6px;
+            height: 2px;
+        }
+    }
+}

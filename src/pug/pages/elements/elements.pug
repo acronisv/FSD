@@ -6,6 +6,7 @@ include ../../components/calendar/calendar
 include ../../components/checkbox/checkbox
 include ../../components/checkbox-list/checkbox-list
 include ../../components/information/information
+include ../../components/radio/radio
 
 block variables
     - var title = "Form elements"
@@ -47,3 +48,5 @@ block content
                     +checkbox({id:'cb_id1', title:'Можно курить'})
                     +checkbox({id:'cb_id2', title:'Можно с питомцами'})
                     +checkbox({id:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
+                .form-elements__item
+                    +radio({radio1:'Мужчина', radio2:'Женщина'})
