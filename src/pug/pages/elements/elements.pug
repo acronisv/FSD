@@ -36,17 +36,18 @@ block content
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
                 .form-elements__item.form-elements__item--small-width
-                    +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
                 .form-elements__item.form-elements__item--small-width
-                    +checkbox-list({idc:'a',items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
                 .form-elements__item.form-elements__item--small-width
                     +information({title:'Комфорт', text:'Шумопоглощающие стены'})
                     +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
             .form-elements__wrapper.form-elements__wrapper--group3
                 .form-elements__item.form-elements__item--small-width
                     .form-elements__title= 'Checkbox Buttons'
-                    +checkbox({id:'cb_id1', title:'Можно курить'})
-                    +checkbox({id:'cb_id2', title:'Можно с питомцами'})
-                    +checkbox({id:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
+                    +checkbox({name:'cb_id1', title:'Можно курить'})
+                    +checkbox({name:'cb_id2', title:'Можно с питомцами'})
+                    +checkbox({name:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
                 .form-elements__item
+                    .form-elements__title= 'Radio buttons'
                     +radio({radio1:'Мужчина', radio2:'Женщина'})

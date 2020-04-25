@@ -6,7 +6,6 @@
 
     &__row {
         position: relative;
-        display: flex;
         margin-bottom: 10px;
     }
 
@@ -14,13 +13,14 @@
         position: absolute;
         left: -1000px;
         opacity: 0;
-    }
-    &__input {
-        &:checked + .checkbox__label {
+        &:checked + .checkbox__text {
             &:before {
                 border: 1px solid #BC9CFF;
             }
             &:after {
+                display: block;
+                position: absolute;
+                content:'';
                 left: 6px;
                 top: 6px;
                 height: 6px;
@@ -31,32 +31,25 @@
             }
         }
     }
-    &__label {
+
+    &__text {
+        display: flex;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark50;
         margin-right: 10px;
         position: relative;
+
         &:before {
+            flex-shrink: 0;
             content:'';
             display: block;
             width: 20px;
             height: 20px;
             border: 1px solid $dark25;
             box-sizing: border-box;
-            border-radius: 4px
+            border-radius: 4px;
+            margin-right: 10px;
         }
-        &:after {
-            top: 10px;
-            left:10px;
-            position: absolute;
-            content:'';
-            display: block;
-            width: 6px;
-            height: 2px;
-        }
-    }
-
-    &__text {
-        font-size: 14px;
-        line-height: 18px;
-        color: $dark50;
     }
 }

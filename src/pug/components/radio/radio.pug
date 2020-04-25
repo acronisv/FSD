@@ -1,8 +1,10 @@
-mixin radio({name1='radio_1', radio1='1st', radio2='2nd'})
+mixin radio({name='radio_name', radio1='1st', radio2='2nd'})
     .radio__wrapper
-        input.radio__input(type='radio', name=name1)
-        label.radio__label(for=name)
-        span.radio__text= radio1
-        input.radio__input(type='radio', name=name1)
-        label.radio__label(for=id)
-        span.radio__text= radio2
+        .radio__item
+            label.radio__label(for=name)
+                input.radio__input(checked='checked' type='radio',id=name, name=name)
+                span.radio__text= radio1
+        .radio__item
+            label.radio__label
+                input.radio__input(type='radio', name=name)
+                span.radio__text= radio2
