@@ -7,6 +7,7 @@ include ../../components/checkbox/checkbox
 include ../../components/checkbox-list/checkbox-list
 include ../../components/information/information
 include ../../components/radio/radio
+include ../../components/toggle/toggle
 
 block variables
     - var title = "Form elements"
@@ -51,3 +52,9 @@ block content
                 .form-elements__item
                     .form-elements__title= 'Radio buttons'
                     +radio({radio1:'Мужчина', radio2:'Женщина'})
+                .form-elements__item
+                    .form-elements__title= 'Toggle'
+                    +toggle({title: 'Получать спецпредложения'})
+                    +toggle({title: 'Получать спецпредложения'})
+                .form-elements__item
+                    .form-elements__title= 'Like button'

@@ -1,0 +1,64 @@
+@import './../../../assets/scss/utils/vars.scss';
+.toggle {
+    &__wrapper {
+        position: relative;
+    }
+
+    &__row {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        position: absolute;
+        left: -1000px;
+        opacity: 0;
+        &:checked + .toggle__text {
+            &:before {
+                border: 1px solid #BC9CFF;
+            }
+            &:after {
+                display: block;
+                position: absolute;
+                content:'';
+                left: 24px;
+                background: #bc9cff;
+                transition: .4s;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark50;
+        margin-right: 10px;
+        position: relative;
+
+        &:before {
+            flex-shrink: 0;
+            content:'';
+            display: block;
+            width: 40px;
+            height: 20px;
+            border: 1px solid $dark25;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        &:after {
+            content:'';
+            display: block;
+            width: 12px;
+            height: 12px;
+            top: 4px;
+            left: 4px;
+            background: $dark25;
+            border-radius: 10px;
+            position: absolute;
+            transition: .4s;
+        }
+    }
+}
