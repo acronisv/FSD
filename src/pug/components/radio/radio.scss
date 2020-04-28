@@ -9,6 +9,7 @@
         left: -1000px;
         opacity: 0;
         &:checked +.radio__text {
+            color: $dark75;
             &:before {
                 border: 1px solid #BC9CFF;
             }
@@ -33,7 +34,7 @@
     &__text {
         display: flex;
         position: relative;
-
+        color: $dark50;
         &:before {
             content:'';
             display: block;

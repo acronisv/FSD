@@ -10,6 +10,7 @@ import './../../components/checkbox-list/checkbox-list.js';
 import './../../components/information/information.js';
 import './../../components/radio/radio.js';
 import './../../components/toggle/toggle.js';
+import './../../components/like-btn/like-btn.js';
 //1 пример
 $(function(){
     $("#masked-textfield").mask("99.99.9999", {placeholder: "ДД.ММ.ГГГГ" });

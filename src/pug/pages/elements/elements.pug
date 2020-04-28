@@ -8,6 +8,7 @@ include ../../components/checkbox-list/checkbox-list
 include ../../components/information/information
 include ../../components/radio/radio
 include ../../components/toggle/toggle
+include ../../components/like-btn/like-btn
 
 block variables
     - var title = "Form elements"
@@ -58,3 +59,4 @@ block content
                     +toggle({title: 'Получать спецпредложения'})
                 .form-elements__item
                     .form-elements__title= 'Like button'
+                    +like-btn
