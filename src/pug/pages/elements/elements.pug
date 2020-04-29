@@ -9,6 +9,7 @@ include ../../components/information/information
 include ../../components/radio/radio
 include ../../components/toggle/toggle
 include ../../components/like-btn/like-btn
+include ../../components/rate-btn/rate-btn
 
 block variables
     - var title = "Form elements"
@@ -60,3 +61,7 @@ block content
                 .form-elements__item
                     .form-elements__title= 'Like button'
                     +like-btn
+                .form-elements__item
+                    .form-elements__title= 'Rate button'
+                    +rate-btn
+                    +rate-btn

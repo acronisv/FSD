@@ -11,6 +11,7 @@ import './../../components/information/information.js';
 import './../../components/radio/radio.js';
 import './../../components/toggle/toggle.js';
 import './../../components/like-btn/like-btn.js';
+import './../../components/rate-btn/rate-btn.js';
 //1 пример
 $(function(){
     $("#masked-textfield").mask("99.99.9999", {placeholder: "ДД.ММ.ГГГГ" });
