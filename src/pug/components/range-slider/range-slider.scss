@@ -1,0 +1,20 @@
+.slider {
+    &__header {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;       
+        text-transform: uppercase;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__values {
+        display: flex;
+
+    }
+    &__value {
+
+    }
+}
