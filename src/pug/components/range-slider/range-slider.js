@@ -38,8 +38,8 @@ function updateInputs (data) {
 	from = data.from;
     to = data.to;
     
-    $inputFrom.prop("value", from);
-    $inputTo.prop("value", to);	
+    $inputFrom.text(from);
+    $inputTo.text(to);	
 }
 
 $inputFrom.on("input", function () {
@@ -58,7 +58,7 @@ $inputFrom.on("input", function () {
 });
 
 $inputTo.on("input", function () {
-    var val = $(this).text("value");
+    var val = $(this).prop("value");
     
     // validate
     if (val < from) {

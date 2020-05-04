@@ -8,13 +8,22 @@
 
     &__info {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__values {
         display: flex;
 
     }
-    &__value {
-
+    &__value {        
+        &:last-child {
+            &:before {
+                content: '\20bd\20 - ';
+            }
+            &:after {
+                content: '\20bd';
+            }
+        }
     }
 }

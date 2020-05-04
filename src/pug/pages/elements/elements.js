@@ -13,6 +13,7 @@ import './../../components/toggle/toggle.js';
 import './../../components/like-btn/like-btn.js';
 import './../../components/rate-btn/rate-btn.js';
 import './../../components/range-slider/range-slider.js';
+import './../../components/button/button.js';
 
 //1 пример
 $(function(){
