@@ -67,5 +67,16 @@ block content
                     .form-elements__title= 'Rate button'
                     +rate-btn
                     +rate-btn
-                .form-elements__item
+                .form-elements__item.form-elements__item--small-width
                     +range-slider({})
+                .form-elements__item
+                    .form-elements__title= 'Buttons'
+                    .form-elements__item-row
+                        +button({})
+                    .form-elements__item-row
+                        +button({type: 'bordered'})
+                    .form-elements__item-row
+                        +button({type: 'apply'})
+                        +button({type: 'cancel'})
+                    .form-elements__item-row
+                        +button({title: 'Перейти к оплате',type: 'submit'})
