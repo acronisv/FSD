@@ -15,7 +15,7 @@
         opacity: 0;
         &:checked + .checkbox__text {
             &:before {
-                border: 1px solid #BC9CFF;
+                border: 1px solid $primary;
             }
             &:after {
                 display: block;
@@ -25,8 +25,8 @@
                 top: 6px;
                 height: 6px;
                 width: 8px;
-                border-left: 2px solid #bc9cff;
-                border-bottom: 2px solid #bc9cff;
+                border-left: 2px solid $primary;
+                border-bottom: 2px solid $primary;
                 transform: rotate(-45deg);
             }
         }

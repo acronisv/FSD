@@ -16,16 +16,16 @@
         z-index: 10;
 
         &--active {
-            border: 1px solid #BC9CFF;
+            border: 1px solid $primary;
         }
 
         &--active + .like__value {
-            color:#bc9cff;
+            color:$primary;
             
         }
 
         &--active.like__button::before{
-            color: #bc9cff;
+            color: $primary;
             content:'favorite';
         }
         &::before {

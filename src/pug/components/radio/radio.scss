@@ -11,7 +11,7 @@
         &:checked +.radio__text {
             color: $dark75;
             &:before {
-                border: 1px solid #BC9CFF;
+                border: 1px solid $primary;
             }
             &:after {
                 display: block;
@@ -21,7 +21,7 @@
                 top: 4px;
                 height: 12px;
                 width: 12px;
-                background: #bc9cff;
+                background: $primary;
                 border-radius: 10px;
             }
         }

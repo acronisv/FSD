@@ -1,7 +1,7 @@
 @import './../../../assets/scss/utils/vars.scss';
 .btn {
     height: 44px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: $gradient;
     border-radius: 22px;
     font-family: 'Montserrat';
     font-style: normal;

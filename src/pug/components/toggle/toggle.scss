@@ -15,14 +15,14 @@
         opacity: 0;
         &:checked + .toggle__text {
             &:before {
-                border: 1px solid #BC9CFF;
+                border: 1px solid $primary;
             }
             &:after {
                 display: block;
                 position: absolute;
                 content:'';
                 left: 24px;
-                background: #bc9cff;
+                background: $primary;
                 transition: .4s;
             }
         }
