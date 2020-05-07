@@ -12,6 +12,7 @@ include ../../components/like-btn/like-btn
 include ../../components/rate-btn/rate-btn
 include ../../components/range-slider/range-slider
 include ../../components/button/button
+include ../../components/pagination/pagination
 
 block variables
     - var title = "Form elements"
@@ -80,3 +81,6 @@ block content
                         +button({type: 'cancel'})
                     .form-elements__item-row
                         +button({title: 'Перейти к оплате',type: 'submit'})
+                .form-elements__item
+                    .form-elements__title= 'Pagination'
+                    +pagination({})
