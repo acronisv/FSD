@@ -1,0 +1,70 @@
+@import './../../../assets/scss/utils/vars.scss';
+.rich-checkbox {
+    &__title {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        margin-bottom: 11px;
+    }
+
+    &__description {
+        margin-left: 30px;
+        color: $dark50;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__input {
+        position: absolute;
+        left: -1000px;
+        opacity: 0;
+        &:checked + .rich-checkbox__text {
+            &:before {
+                border: 1px solid $primary;
+            }
+            &:after {
+                display: block;
+                position: absolute;
+                content:'';
+                left: 6px;
+                top: 6px;
+                height: 6px;
+                width: 8px;
+                border-left: 2px solid $primary;
+                border-bottom: 2px solid $primary;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        color: $dark75;
+        margin-right: 10px;
+        margin-bottom: 4px;
+        position: relative;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+
+        &:before {
+            flex-shrink: 0;
+            content:'';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $dark25;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    }
+}
