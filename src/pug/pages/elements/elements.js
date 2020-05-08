@@ -15,6 +15,7 @@ import './../../components/rate-btn/rate-btn.js';
 import './../../components/range-slider/range-slider.js';
 import './../../components/button/button.js';
 import './../../components/pagination/pagination.js';
+import './../../components/bullet-list/bullet-list.js';
 
 //1 пример
 $(function(){

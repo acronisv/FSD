@@ -1,0 +1,6 @@
+mixin bullet-list({name='Bullet list', items=[]})
+    .bullet-list
+        .bullet-list__title= name
+        ul.bullet-list__wrap
+            each item,i in items
+                li.bullet-list__item= items[i]
