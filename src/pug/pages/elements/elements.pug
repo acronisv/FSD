@@ -14,10 +14,8 @@ include ../../components/range-slider/range-slider
 include ../../components/button/button
 include ../../components/pagination/pagination
 include ../../components/bullet-list/bullet-list
-<<<<<<< HEAD
 include ../../components/rich-checkbox/rich-checkbox
-=======
->>>>>>> 17368a6703cb6239f5859f8d92c6dcc43a72d416
+include ../../components/comments/comments
 
 block variables
     - var title = "Form elements"
@@ -93,3 +91,5 @@ block content
                     +bullet-list({items:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
                 .form-elements__item.form-elements__item--small-width
                     +rich-checkbox({items:['Широкий коридор','Помощник для инвалида'], desc:['Ширина коридоров в номере не менее 91 см.','На 1 этаже вас встретит специалист и проводит до номера.']})
+                .form-elements__item
+                    +comments()
