@@ -45,6 +45,22 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: $h1FontSize;
+}
+
+h2 {
+  font-size: $h2FontSize;
+}
+
+h3 {
+  font-size: $h3FontSize;
+}
+
+p {
+  font-size: $mainFontSize;
+}
+
 a {
   text-decoration: none;
 }
@@ -100,6 +116,24 @@ section,
   @media screen and (max-width: $phoneWidth) {
     max-width: $smPhoneWidth;
   }
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 41px;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  color: #BC9CFF;
+  margin-top: 3px;
 }
 
 // Modules:

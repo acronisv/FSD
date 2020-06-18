@@ -1,0 +1,43 @@
+.form-elements {
+    font-family: 'Montserrat';
+    padding: 143px 0;
+
+    &__wrapper {
+        padding-bottom: 20px;
+        width: 320px;
+        
+        &--group2 {
+            .form-elements__item {
+                margin-bottom: 36px;
+            }
+        }
+
+        &--group3 {
+            flex-grow: 0;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;       
+        text-transform: uppercase;
+        margin-bottom: 17px;
+    }
+    
+    &__item {
+        margin-bottom: 20px;
+
+        &--small-width {
+            width: 266px;
+        }
+
+        &--wide {
+            width: 711px;
+        }
+    }
+
+    &__item-row {
+        margin-bottom: 30px;
+    }
+}

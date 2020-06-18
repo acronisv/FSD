@@ -1,0 +1,10 @@
+mixin rich-checkbox({name='Rich checkbox buttons', items=[], desc=[]})
+    .rich-checkbox
+        .rich-checkbox__title= name
+        .rich-checkbox__content
+            each item,i in items
+                .rich-checkbox__item
+                    label.rich-checkbox__label
+                        input.rich-checkbox__input(type='checkbox', name=c_name)
+                        span.rich-checkbox__text= item
+                    .rich-checkbox__description= desc[i]

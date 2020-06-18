@@ -1,0 +1,55 @@
+@import './../../../assets/scss/utils/vars.scss';
+.checkbox {
+    &__wrapper {
+        position: relative;
+    }
+
+    &__row {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        position: absolute;
+        left: -1000px;
+        opacity: 0;
+        &:checked + .checkbox__text {
+            &:before {
+                border: 1px solid $primary;
+            }
+            &:after {
+                display: block;
+                position: absolute;
+                content:'';
+                left: 6px;
+                top: 6px;
+                height: 6px;
+                width: 8px;
+                border-left: 2px solid $primary;
+                border-bottom: 2px solid $primary;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark50;
+        margin-right: 10px;
+        position: relative;
+
+        &:before {
+            flex-shrink: 0;
+            content:'';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $dark25;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,4 +1,4 @@
+//import 'jquery';
 import './js/main.js';
 import './assets/css/main.css';
-import './assets/scss/main.scss';
-
+import './assets/scss/main.scss'

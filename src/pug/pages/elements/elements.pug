@@ -1,0 +1,95 @@
+extend ../../layout/main
+include ../../components/dropdown/dropdown
+include ../../components/input/input
+include ../../components/field-subscribe/field-subscribe
+include ../../components/calendar/calendar
+include ../../components/checkbox/checkbox
+include ../../components/checkbox-list/checkbox-list
+include ../../components/information/information
+include ../../components/radio/radio
+include ../../components/toggle/toggle
+include ../../components/like-btn/like-btn
+include ../../components/rate-btn/rate-btn
+include ../../components/range-slider/range-slider
+include ../../components/button/button
+include ../../components/pagination/pagination
+include ../../components/bullet-list/bullet-list
+include ../../components/rich-checkbox/rich-checkbox
+include ../../components/comments/comments
+
+block variables
+    - var title = "Form elements"
+    - var description = "Form elements page"
+
+block content
+    .container
+        .form-elements
+            .form-elements__wrapper
+                .form-elements__item
+                    +input({label:'text field', name:'name1', id:'textfield-id1', placeholder:'Email'})
+                .form-elements__item
+                    +input({label:'text field', name:'input2', id:'textfield-id2', placeholder:'This is pretty awesome'})
+                .form-elements__item
+                    +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
+                .form-elements__item
+                    +input({label:'masked text field', name:'name1', id:'masked-textfield', placeholder:'ДД.ММ.ГГГГ'})
+            .form-elements__wrapper.form-elements__wrapper--group2
+                .form-elements__item
+                    +calendar({type:'dual', labelFrom:'date dropdown', labelTo:'date dropdown'})
+                .form-elements__item.form-elements__item--small-width
+                    +calendar({label:'filter date dropdown'})
+                .form-elements__item.form-elements__item--small-width
+                    +field-subscribe({})
+                .form-elements__item.form-elements__item--small-width
+                    +dropdown({label:'dropdown', name:'drop1', placeholder:'Удобства'})
+                .form-elements__item.form-elements__item--small-width
+                    +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
+                .form-elements__item.form-elements__item--small-width
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
+                .form-elements__item.form-elements__item--small-width
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
+                .form-elements__item.form-elements__item--small-width
+                    +information({title:'Комфорт', text:'Шумопоглощающие стены'})
+                    +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
+            .form-elements__wrapper.form-elements__wrapper--group3
+                .form-elements__item.form-elements__item--small-width
+                    .form-elements__title= 'Checkbox Buttons'
+                    +checkbox({name:'cb_id1', title:'Можно курить'})
+                    +checkbox({name:'cb_id2', title:'Можно с питомцами'})
+                    +checkbox({name:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
+                .form-elements__item
+                    .form-elements__title= 'Radio buttons'
+                    +radio({radio1:'Мужчина', radio2:'Женщина'})
+                .form-elements__item
+                    .form-elements__title= 'Toggle'
+                    +toggle({title: 'Получать спецпредложения'})
+                    +toggle({title: 'Получать спецпредложения'})
+                .form-elements__item
+                    .form-elements__title= 'Like button'
+                    +like-btn
+                .form-elements__item
+                    .form-elements__title= 'Rate button'
+                    +rate-btn
+                    +rate-btn
+                .form-elements__item.form-elements__item--small-width
+                    +range-slider({})
+                .form-elements__item
+                    .form-elements__title= 'Buttons'
+                    .form-elements__item-row
+                        +button({})
+                    .form-elements__item-row
+                        +button({type: 'bordered'})
+                    .form-elements__item-row
+                        +button({type: 'apply'})
+                        +button({type: 'cancel'})
+                    .form-elements__item-row
+                        +button({title: 'Перейти к оплате',type: 'submit'})
+                .form-elements__item
+                    .form-elements__title= 'Pagination'
+                    +pagination({})
+                .form-elements__item.form-elements__item--small-width
+                    +bullet-list({items:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
+                .form-elements__item.form-elements__item--small-width
+                    +rich-checkbox({items:['Широкий коридор','Помощник для инвалида'], desc:['Ширина коридоров в номере не менее 91 см.','На 1 этаже вас встретит специалист и проводит до номера.']})
+                .form-elements__item.form-elements__item--wide
+                    +comments()

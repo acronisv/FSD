@@ -1,0 +1,10 @@
+@import './../../../assets/scss/utils/vars.scss';
+.rate {
+    &__value {
+        display: inline-block;
+        font-family: 'Material Icons';
+        cursor: pointer;
+        font-size: 24px;
+        color: $primary;
+    }
+}

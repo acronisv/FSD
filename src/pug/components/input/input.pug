@@ -1,0 +1,4 @@
+mixin input({type='text', name='name', id, label='label', placeholder='placeholder'})
+    .input__wrapper
+        label.input__label(for=name)= label
+        input.input__elem(type=type, name=name, id=id, placeholder=placeholder)

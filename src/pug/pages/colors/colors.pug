@@ -1,9 +1,45 @@
 extend ../../layout/main
+include ../../components/colors-item/colors-item
 
 block variables
     - var title = "Colors & types"
     - var description = "Colors & types page"
 
 block content
-    .colors-kit colors
-    .headings headings
+    .container
+        .page-types
+            .colors
+                .colors__item-wrap
+                    .colors__item.colors__item--shade100
+                    +colors('Dark Shade 100%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade75
+                    +colors('Dark Shade 75%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade50
+                    +colors('Dark Shade 50%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade25
+                    +colors('Dark Shade 25%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--shade5
+                    +colors('Dark Shade 5%', '#1F2041')
+                .colors__item-wrap
+                    .colors__item.colors__item--purple
+                    +colors('Purple', '#BC9CFF')
+                .colors__item-wrap
+                    .colors__item.colors__item--green
+                    +colors('Green', '#6FCF97')
+            .headings
+                .headings__item
+                    span.headings__description.headings__description--h1 H1
+                    h1.headings__text.headings__text--bold This one is the sub-section or widget title
+                .headings__item
+                    span.headings__description.headings__description--h2 H2
+                    h2.headings__text.headings__text--bold Next one is the item title inside widgets
+                .headings__item.headings__item--bold
+                    span.headings__description.headings__description--h3 H3
+                    h3.headings__text.headings__text--bold.headings__text--ff-montserrat.headings__text--uppercase This is a label or CTA text
+                .headings__item
+                    span.headings__description.headings__description--p Body
+                    p.headings__text.headings__text--ff-montserrat This is the body text which is used for most<br> of the design, like paragraphs, lists, etc.

@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -27,7 +28,8 @@ module.exports = {
     },
     entry: {
         app: PATHS.src,
-        colors: `${PATHS.src}/pug/pages/colors/colors.js`
+        colors: `${PATHS.src}/pug/pages/colors/colors.js`,
+        elements: `${PATHS.src}/pug/pages/elements/elements.js`
     },
     output: {
         path: PATHS.dist,
@@ -145,8 +147,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/colors/colors.pug`,
             filename: './colors/colors.html',
-            chunks: ['colors'],
+            chunks: ['colors', 'app'],
             inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/elements/elements.pug`,
+            filename: './elements/elements.html',
+            chunks: ['elements', 'app'],
+            inject: true
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
         })
 
         // For using standart html files

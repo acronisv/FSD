@@ -1,0 +1,13 @@
+mixin button({title='click me', type=''})
+    if type==''
+        button.btn= title
+    else if type=='bordered'
+        button.btn.btn--bordered
+            span.btn__title= title
+    else if type=='apply'
+        button.btn.btn--apply= title
+    else if type=='cancel'
+        button.btn.btn--cancel= title
+    else if type=='submit'
+        button.btn.btn--submit= title
+    

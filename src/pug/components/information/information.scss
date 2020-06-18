@@ -1,0 +1,22 @@
+@import './../../../assets/scss/utils/vars.scss';
+.information {
+    &__wrapper {
+        display: flex;
+        padding-bottom: 19px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $dark10;
+    }
+
+    &__icon {
+        max-width: 48px;
+        max-height: 48px;
+    }
+
+    &__content {
+        margin-left: 10px;
+    }
+
+    &__title{
+        font-weight: bold;
+    }
+}

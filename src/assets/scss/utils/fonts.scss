@@ -18,7 +18,49 @@
          url('/assets/fonts/Helvetica/Base/Helvetica-Base.svg') format('svg'); // Legacy iOS
   }
 */
+@font-face {
+  font-family: "OpenSans";
+  src: url('/assets/fonts/open-sans/Regular/OpenSans-Regular.woff') format('woff'), // Pretty Modern Browsers
+       url('/assets/fonts/open-sans/Regular/OpenSans-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+       url('/assets/fonts/open-sans/Regular/OpenSans-Regular.svg') format('svg'); // Legacy iOS
+       font-weight: normal;
+       font-style: normal;
+}
 
+@font-face {
+  font-family: "OpenSans";
+  src: url('/assets/fonts/open-sans/Bold/OpenSans-Bold.woff') format('woff'), // Pretty Modern Browsers
+       url('/assets/fonts/open-sans/Bold/OpenSans-Bold.ttf')  format('truetype'), // Safari, Android, iOS
+       url('/assets/fonts/open-sans/Bold/OpenSans-Bold.svg') format('svg'); // Legacy iOS
+       font-weight: bold;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('/assets/fonts/Montserrat/Regular/Montserrat-Regular.woff') format('woff'), // Pretty Modern Browsers
+       url('/assets/fonts/Montserrat/Regular/Montserrat-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+       url('/assets/fonts/Montserrat/Regular/Montserrat-Regular.svg') format('svg'); // Legacy iOS
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('/assets/fonts/Montserrat/Bold/Montserrat-Bold.woff') format('woff'), // Pretty Modern Browsers
+       url('/assets/fonts/Montserrat/Bold/Montserrat-Bold.ttf')  format('truetype'), // Safari, Android, iOS
+       url('/assets/fonts/Montserrat/Bold/Montserrat-Bold.svg') format('svg'); // Legacy iOS
+       font-weight: bold;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Material Icons';
+  src: url('/assets/fonts/Montserrat/MaterialIcons/MaterialIcons-Regular.woff') format('woff'), // Pretty Modern Browsers
+  url('/assets/fonts/Montserrat/Bold/MaterialIcons-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+  url('/assets/fonts/Montserrat/Bold/MaterialIcons-Regular.svg') format('svg'); // Legacy iOS
+       font-weight: normal;
+       font-style: normal;
+}
 // 2. Example with mixin (example):
 // NOTE: do NOT use expansion (.woff, .svg etc) for path! Path will be '/assets/fonts/OpenSans/opensans';
 // NOTE-2: files required: `.woff, .woffs` (by default) OR `eot. .woff, .woffs, .svg, .ttf` if you use another mixin;

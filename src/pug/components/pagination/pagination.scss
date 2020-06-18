@@ -1,0 +1,36 @@
+@import './../../../assets/scss/utils/vars.scss';
+.pagination {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $dark50;
+        width: 40px;
+        height: 40px;
+        border-radius: 22px;
+
+        &--active {
+            background: $gradient;
+            color: #ffffff;
+        }
+
+        &:last-child {
+            font-family: 'Material Icons';
+            text-transform: lowercase;
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 20px;
+            font-weight: normal;
+        }
+    }
+
+    &__note {
+        padding: 7px 0 0 6px;
+    }
+    
+}

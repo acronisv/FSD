@@ -1,0 +1,12 @@
+include ../checkbox/checkbox
+
+mixin checkbox-list({name='Expandable checkbox list', items=[], names=[]})
+    .checkbox-list__wrapper
+        .checkbox-list__title
+            p.checkbox-list__text= name
+            .checkbox-list__buttons
+                span.checkbox-list__button.checkbox-list__button--open
+                span.checkbox-list__button.checkbox-list__button--close
+        .checkbox-list__content
+            each item,i in items
+                +checkbox({name: names[i], title: item})

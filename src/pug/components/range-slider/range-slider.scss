@@ -1,0 +1,29 @@
+.slider {
+    &__header {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;       
+        text-transform: uppercase;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__values {
+        display: flex;
+
+    }
+    &__value {        
+        &:last-child {
+            &:before {
+                content: '\20bd\20 - ';
+            }
+            &:after {
+                content: '\20bd';
+            }
+        }
+    }
+}
