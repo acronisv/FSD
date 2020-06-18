@@ -1,9 +1,10 @@
 mixin comments()
     .comment__profile
         .comment__avatar
-            img(src='../img/image.png')
-        .comment__name Мурад Сарафанов
-        .comment__time 5 дней назад
+            img(src=require('../../components/comments/img/avatar.png').default)
+        .comment__info
+            .comment__name Мурад Сарафанов
+            .comment__time 5 дней назад
     .comment__wrap
         .comment__like
             +like-btn
