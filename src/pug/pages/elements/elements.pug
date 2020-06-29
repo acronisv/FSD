@@ -24,7 +24,7 @@ block variables
 block content
     .container
         .form-elements
-            .form-elements__wrapper
+            .form-elements__wrapper.form-elements__wrapper--group1
                 .form-elements__item
                     +input({label:'text field', name:'name1', id:'textfield-id1', placeholder:'Email'})
                 .form-elements__item
@@ -33,13 +33,13 @@ block content
                     +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
                 .form-elements__item
                     +input({label:'masked text field', name:'name1', id:'masked-textfield', placeholder:'ДД.ММ.ГГГГ'})
-            .form-elements__wrapper.form-elements__wrapper--group2
                 .form-elements__item
                     +calendar({type:'dual', labelFrom:'date dropdown', labelTo:'date dropdown'})
                 .form-elements__item.form-elements__item--small-width
                     +calendar({label:'filter date dropdown'})
                 .form-elements__item.form-elements__item--small-width
                     +field-subscribe({})
+            .form-elements__wrapper.form-elements__wrapper--group2
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop1', placeholder:'Удобства'})
                 .form-elements__item.form-elements__item--small-width
@@ -71,6 +71,7 @@ block content
                     .form-elements__title= 'Rate button'
                     +rate-btn
                     +rate-btn
+            .form-elements__wrapper.form-elements__wrapper--group4
                 .form-elements__item.form-elements__item--small-width
                     +range-slider({})
                 .form-elements__item
@@ -87,9 +88,12 @@ block content
                 .form-elements__item
                     .form-elements__title= 'Pagination'
                     +pagination({})
+            .form-elements__wrapper.form-elements__wrapper--group5
                 .form-elements__item.form-elements__item--small-width
                     +bullet-list({items:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
+            .form-elements__wrapper.form-elements__wrapper--group6
                 .form-elements__item.form-elements__item--small-width
                     +rich-checkbox({items:['Широкий коридор','Помощник для инвалида'], desc:['Ширина коридоров в номере не менее 91 см.','На 1 этаже вас встретит специалист и проводит до номера.']})
+            .form-elements__wrapper.form-elements__wrapper--group7
                 .form-elements__item.form-elements__item--wide
                     +comments()

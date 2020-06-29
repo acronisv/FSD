@@ -1,19 +1,43 @@
 .form-elements {
     font-family: 'Montserrat';
     padding: 143px 0;
+    display: grid;
+    grid-template-columns: 320px 260px 320px;
+    grid-column-gap: 130px;
+    
 
     &__wrapper {
         padding-bottom: 20px;
         width: 320px;
+
+        &--group1 {
+            //grid-column-start: 2;
+        }
         
         &--group2 {
             .form-elements__item {
                 margin-bottom: 36px;
             }
+            grid-row-start: 2;
+            grid-row-end: 4;
         }
 
         &--group3 {
             flex-grow: 0;
+        }
+
+        &--group5 {
+            //grid-column-start:3;
+            
+        }
+
+        &--group6 {
+            grid-row-start: 2;
+            grid-column-start:2;
+        }
+
+        &--group7 {
+            grid-column-start:2;
         }
     }
 
