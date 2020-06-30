@@ -29,13 +29,13 @@ block content
                     +input({label:'text field', name:'name1', id:'textfield-id1', placeholder:'Email'})
                 .form-elements__item
                     +input({label:'text field', name:'input2', id:'textfield-id2', placeholder:'This is pretty awesome'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--dropdown
                     +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--masked
                     +input({label:'masked text field', name:'name1', id:'masked-textfield', placeholder:'ДД.ММ.ГГГГ'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--date-dropdown
                     +calendar({type:'dual', labelFrom:'date dropdown', labelTo:'date dropdown'})
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--filter-date
                     +calendar({label:'filter date dropdown'})
                 .form-elements__item.form-elements__item--small-width
                     +field-subscribe({})
@@ -44,35 +44,34 @@ block content
                     +dropdown({label:'dropdown', name:'drop1', placeholder:'Удобства'})
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--expandable-list
                     +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
                 .form-elements__item.form-elements__item--small-width
-                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
-                .form-elements__item.form-elements__item--small-width
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь']})
+                .form-elements__item.form-elements__item--small-width.form-elements__item--information
                     +information({title:'Комфорт', text:'Шумопоглощающие стены'})
                     +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
             .form-elements__wrapper.form-elements__wrapper--group3
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--checkbox-btn
                     .form-elements__title= 'Checkbox Buttons'
                     +checkbox({name:'cb_id1', title:'Можно курить'})
                     +checkbox({name:'cb_id2', title:'Можно с питомцами'})
                     +checkbox({name:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--radio-btn
                     .form-elements__title= 'Radio buttons'
                     +radio({radio1:'Мужчина', radio2:'Женщина'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--toggle
                     .form-elements__title= 'Toggle'
                     +toggle({title: 'Получать спецпредложения'})
                     +toggle({title: 'Получать спецпредложения'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--like-btn
                     .form-elements__title= 'Like button'
                     +like-btn
                 .form-elements__item
                     .form-elements__title= 'Rate button'
                     +rate-btn
-                    +rate-btn
             .form-elements__wrapper.form-elements__wrapper--group4
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--range-slider
                     +range-slider({})
                 .form-elements__item
                     .form-elements__title= 'Buttons'
