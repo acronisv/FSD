@@ -16,15 +16,14 @@ include ../../components/pagination/pagination
 include ../../components/bullet-list/bullet-list
 include ../../components/rich-checkbox/rich-checkbox
 include ../../components/comments/comments
+include ../../components/head/head
 
 block variables
     - var title = "Form elements"
     - var description = "Form elements page"
 
 block content
-        .head
-            .logo
-                img(src=require('../../../assets/img/logo.png').default)
+        +head()
         .form-elements
             .form-elements__wrapper.form-elements__wrapper--group1
                 .form-elements__item
@@ -47,9 +46,9 @@ block content
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
                 .form-elements__item.form-elements__item--small-width.form-elements__item--expandable-list
-                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
                 .form-elements__item.form-elements__item--small-width
-                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь']})
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
                 .form-elements__item.form-elements__item--small-width.form-elements__item--information
                     +information({title:'Комфорт', text:'Шумопоглощающие стены'})
                     +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})

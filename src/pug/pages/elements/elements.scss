@@ -1,11 +1,6 @@
 @import './../../../assets/scss/main.scss';
 @import './../../../assets/scss/utils/vars.scss';
-.head {
-    @extend .container;
-}
-.logo {
-    padding: 30px 0 63px 30px;
-}
+
 .form-elements {
     font-family: 'Montserrat';
     justify-content: center;
@@ -33,18 +28,18 @@
         }
 
         &--group5 {
-            padding-top: 321px;
+            padding-top: 320px;
         }
 
         &--group6 {
             grid-row-start: 2;
             grid-column-start:2;
-            padding-top: 321px;    
+            padding-top: 320px;    
         }
 
         &--group7 {
             grid-column-start:2;
-            margin-top: 193px;
+            margin-top: 190px;
         }
     }
 
@@ -89,7 +84,7 @@
         }
 
         &--information {
-            margin-top: 102px;
+            margin-top: 40px;
         }
 
         &--checkbox-btn {

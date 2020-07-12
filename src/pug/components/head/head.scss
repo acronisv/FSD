@@ -1,0 +1,10 @@
+@import './../../../assets/scss/main.scss';
+@import './../../../assets/scss/utils/vars.scss';
+
+.head {
+    @extend .container;
+}
+
+.logo {
+    padding: 30px 0 65px 30px;
+}
