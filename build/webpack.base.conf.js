@@ -29,7 +29,8 @@ module.exports = {
     entry: {
         app: PATHS.src,
         colors: `${PATHS.src}/pug/pages/colors/colors.js`,
-        elements: `${PATHS.src}/pug/pages/elements/elements.js`
+        elements: `${PATHS.src}/pug/pages/elements/elements.js`,
+        cards: `${PATHS.src}/pug/pages/cards/cards.js`
     },
     output: {
         path: PATHS.dist,
@@ -154,6 +155,12 @@ module.exports = {
             template: `${PAGES_DIR}/elements/elements.pug`,
             filename: './elements/elements.html',
             chunks: ['elements', 'app'],
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/cards/cards.pug`,
+            filename: './cards/cards.html',
+            chunks: ['cards', 'app'],
             inject: true
         }),
         new webpack.ProvidePlugin({

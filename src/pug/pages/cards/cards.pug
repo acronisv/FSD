@@ -1,7 +1,17 @@
 extend ../../layout/main
+include ../../components/head/head
+include ../../components/input/input
+include ../../components/room-search/room-search
+include ../../components/calendar/calendar
+include ../../components/dropdown/dropdown
+include ../../components/button/button
 
 block variables
     - var title = "Cards"
     - var description = "Cards page"
 
 block content
+    +head
+    .container
+        +room-search()
+        
