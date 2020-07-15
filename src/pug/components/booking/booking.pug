@@ -1,0 +1,7 @@
+mixin booking
+    .booking
+        form.booking__form(method='post')
+            .booking__calendar
+                +calendar({type:'dual', labelFrom:'Прибытие', labelTo:'Выезд'})
+            .booking__guests
+                +dropdown({label:'Гости', name:'booking-guests', id:'booking-guest-dropdown', placeholder:'Сколько гостей'})

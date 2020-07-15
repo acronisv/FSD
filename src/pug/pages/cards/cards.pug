@@ -8,6 +8,7 @@ include ../../components/button/button
 include ../../components/registration/registration
 include ../../components/radio/radio
 include ../../components/toggle/toggle
+include ../../components/booking/booking
 
 block variables
     - var title = "Cards"
@@ -15,7 +16,7 @@ block variables
 
 block content
     +head
-    .container
+    .cards
         +room-search
         +registration
-        
+        +booking

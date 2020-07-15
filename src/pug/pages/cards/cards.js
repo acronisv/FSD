@@ -8,3 +8,4 @@ import './../../components/registration/registration.js';
 import './../../components/input/input.js';
 import './../../components/radio/radio.js';
 import './../../components/toggle/toggle.js';
+import './../../components/booking/booking.js';

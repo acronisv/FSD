@@ -1,6 +1,23 @@
 @import './../../../assets/scss/main.scss';
 @import './../../../assets/scss/utils/vars.scss';
 
+.cards {
+    @extend .container;
+    display: grid;
+    grid-template-columns: 380px 380px 320px;
+    grid-column-gap: 40px;
+}
 .room-search {
     margin-bottom: 39px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.registration {
+    grid-column-start: 1;
+}
+
+.booking {
+    grid-row-start: 1;
+    grid-column-start: 2;
 }
