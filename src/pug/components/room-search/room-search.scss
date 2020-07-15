@@ -10,18 +10,13 @@
     background: #FFFFFF;
 
     &__header {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-        color: $dark100;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
     .calendar {
         margin-bottom: 20px;
     }
 
-    .dropdown__wrapper{
+    .dropdown {
         margin-bottom: 31px;
     }
 }

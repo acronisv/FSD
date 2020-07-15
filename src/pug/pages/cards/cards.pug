@@ -5,6 +5,9 @@ include ../../components/room-search/room-search
 include ../../components/calendar/calendar
 include ../../components/dropdown/dropdown
 include ../../components/button/button
+include ../../components/registration/registration
+include ../../components/radio/radio
+include ../../components/toggle/toggle
 
 block variables
     - var title = "Cards"
@@ -13,5 +16,6 @@ block variables
 block content
     +head
     .container
-        +room-search()
+        +room-search
+        +registration
         

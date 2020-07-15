@@ -1,0 +1,23 @@
+mixin registration
+    .registration
+        h2.registration__header Регистрация аккаунта
+        form.registration__form(method='post')
+            .registration__name
+                +input({name:'name', placeholder:'Имя', label:''})
+            .registration__surname
+                +input({name:'surname', placeholder:'Фамилия', label:''})
+            .registration__gender
+                +radio({radio1:'Мужчина', radio2:'Женщина'})
+            .registration__date
+                +input({label:'Дата рождения', name:'birth-date', placeholder:'ДД.ММ.ГГГГ'})
+            .registration__email
+                +input({name:'email', placeholder:'Email', label:'Данные для входа в сервис'})
+            .registration__password
+                +input({name:'password', placeholder:'Пароль', label:''})
+            .registration__offer
+                +toggle({title: 'Получать спецпредложения'})
+            .registration__pay
+                +button({title: 'Перейти к оплате',type: 'submit'})
+            .registration__option
+                a.registration__option-link(href='#') Уже есть аккаунт на Toxin
+                +button({title:'Войти',type: 'bordered'})

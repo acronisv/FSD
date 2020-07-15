@@ -51,6 +51,9 @@ h1 {
 
 h2 {
   font-size: $h2FontSize;
+  font-weight: bold;
+  line-height: 30px;
+  color: $dark100;
 }
 
 h3 {
@@ -63,6 +66,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 ul,
