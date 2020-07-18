@@ -1,7 +1,31 @@
 mixin booking
     .booking
         form.booking__form(method='post')
+            .booking__item
+                .booking__number
+                    span.booking__text  №
+                    span.booking__id 888
+                    span.booking__class люкс
+                .booking__price
+                    span.booking__amount 9 990
+                    span.booking__interval в сутки
             .booking__calendar
                 +calendar({type:'dual', labelFrom:'Прибытие', labelTo:'Выезд'})
             .booking__guests
                 +dropdown({label:'Гости', name:'booking-guests', id:'booking-guest-dropdown', placeholder:'Сколько гостей'})
+            .booking__calculator
+                .booking__cost
+                    span.booking__cost-quantity 9 990
+                    span.booking__cost-index 4 суток
+                    span.booking__cost-amount 39 960
+                .booking__tax
+                    span.booking__tax-text Сбор за услуги:
+                    span.booking__tax-discount скидка 2 179
+                    span.booking__tax-amount 0
+                .booking__additional-tax
+                    span.booking__additional-tax-text Сбор за дополнительные услуги
+                    span.booking__additional-tax-amount 300
+                .booking__total-price
+                    span.booking__total-price-text Итого
+                    span.booking__total-price-amount 38 081
+            +button({title: 'Забронировать',type: 'submit'})
