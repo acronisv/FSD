@@ -6,18 +6,26 @@
     display: grid;
     grid-template-columns: 380px 380px 320px;
     grid-column-gap: 40px;
+    height: min-content;
 }
 .room-search {
     margin-bottom: 39px;
     grid-row-start: 1;
     grid-column-start: 1;
+    height: min-content;
 }
 
 .registration {
     grid-column-start: 1;
+    height: min-content;
 }
 
 .booking {
     grid-row-start: 1;
     grid-column-start: 2;
+    height: min-content;
+}
+
+.login {
+    height: min-content;
 }

@@ -9,3 +9,4 @@ import './../../components/input/input.js';
 import './../../components/radio/radio.js';
 import './../../components/toggle/toggle.js';
 import './../../components/booking/booking.js';
+import './../../components/login/login.js';

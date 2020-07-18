@@ -70,11 +70,13 @@
     &__cost {
         display: flex;
         margin-bottom: 16px;
+
         &-quantity {
             &:after {
                 content: '\20bd\20x\A0';
             }
         }
+        
         &-amount{
             margin-left: auto;
             &:after {
@@ -86,9 +88,11 @@
     &__tax {
         display: flex;
         margin-bottom: 16px;
+
         &-amount {
             position: relative;
             margin-left: auto;
+
             &:after {
                 content: '\20bd';
             }
@@ -102,6 +106,7 @@
                 right: 79px;
             }
         }
+
         &-discount {
             &:after {
                 content: '\20bd';
@@ -112,15 +117,15 @@
     &__additional-tax {
         display: flex;
         margin-bottom: 35px;
+
         &-text {
             width: 214px;
         }
-        &-discount {
 
-        }
         &-amount {
             position: relative;
             margin-left: auto;
+
             &:before {
                 font-family: 'Material icons';
                 font-size: 22px;
@@ -129,6 +134,7 @@
                 position: absolute;
                 right: 79px;
             }
+
             &:after {
                 content: '\20bd\20';
             }
@@ -140,16 +146,14 @@
         font-size: 19px;
         font-weight: bold;
         color: $dark100;
+
         &:after {
             content: '';
             width: 100%;
             border-bottom: 0.5px dotted;
             margin: 0 5px 3px 5px;
         }
-        &-text{
-            //position: relative;
-            
-        }
+
         &-amount {
             order: 3;
             flex-shrink: 0;

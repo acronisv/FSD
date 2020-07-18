@@ -1,0 +1,13 @@
+mixin login
+    .login
+        h2.login__header Войти
+        form.login__form(method='post')
+            .login__email
+                +input({name:'login_email', placeholder:'Email', label:''})
+            .login__password
+                +input({name:'login_password', placeholder:'Пароль', label:''})
+            .login__button
+                +button({title: 'Войти',type: 'submit'})
+            .login__option
+                a.login__option-link(href='#') Нет аккаунта на Toxin?
+                +button({title:'Создать',type: 'bordered'})
