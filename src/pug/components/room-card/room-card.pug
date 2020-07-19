@@ -1,0 +1,18 @@
+mixin room-card
+    .room-card
+        .room-card__slider
+            img(src=require('../../components/room-card/img/room1.png').default)
+        .room-card__description
+                .room-card__number
+                    span.room-card__text  №
+                    span.room-card__id 888
+                    span.room-card__class люкс
+                .room-card__price
+                    span.room-card__amount 9 990
+                    span.room-card__interval в сутки
+        .room-card__rating
+            .room-card__vote
+                +rate-btn
+            .room-card__reviews
+                span.room-card__review-quantity 145
+                span.room-card__review-text Отзывов

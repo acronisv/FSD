@@ -18,6 +18,7 @@
 .registration {
     grid-column-start: 1;
     height: min-content;
+    margin-top: -98px;
 }
 
 .booking {
@@ -27,5 +28,11 @@
 }
 
 .login {
+    height: min-content;
+    margin-top: 39px;
+}
+
+.room-card {
+    margin-top: -103px;
     height: min-content;
 }

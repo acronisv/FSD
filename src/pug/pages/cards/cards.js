@@ -10,3 +10,5 @@ import './../../components/radio/radio.js';
 import './../../components/toggle/toggle.js';
 import './../../components/booking/booking.js';
 import './../../components/login/login.js';
+import './../../components/room-card/room-card.js';
+import './../../components/rate-btn/rate-btn.js';
