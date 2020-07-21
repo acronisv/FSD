@@ -3,36 +3,24 @@
 
 .cards {
     @extend .container;
-    display: grid;
-    grid-template-columns: 380px 380px 320px;
-    grid-column-gap: 40px;
-    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .datepicker-here {
+        width: 320px;
+        margin-bottom: 163px;
+
+    }
 }
 .room-search {
-    margin-bottom: 39px;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    height: min-content;
-}
-
-.registration {
-    grid-column-start: 1;
-    height: min-content;
-    margin-top: -98px;
+    margin-bottom: 40px;
 }
 
 .booking {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    height: min-content;
-}
-
-.login {
-    height: min-content;
-    margin-top: 39px;
+    margin-bottom: 40px;
 }
 
 .room-card {
-    margin-top: -103px;
-    height: min-content;
+    margin-bottom: 41px;
 }
