@@ -51,7 +51,8 @@
   height: 40px;
   z-index: 1; }
   .datepicker--cell.-focus- {
-    background: #f0f0f0; }
+    background: #f0f0f0;
+    border-radius: 50%; }
   .datepicker--cell.-current- {
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 50%;
@@ -62,7 +63,6 @@
       color: #4EB5E6; }
   .datepicker--cell.-in-range- {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
-    opacity: 0.55;
     color: #4a4a4a;
     border-radius: 0; }
     .datepicker--cell.-in-range-.-focus- {
@@ -97,7 +97,54 @@
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
   .datepicker--cell:empty {
     cursor: default; }
-
+  .datepicker--cell.-range-from-.-selected-::after {
+    content:'';
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    height: 100%;
+    width: 50%;
+    z-index:-1;
+  }
+  .datepicker--cell.-range-to-.-selected-::before {
+    content:'';
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    height: 100%;
+    width: 50%;
+    z-index:-1;
+  }
+  .datepicker--cell.-range-from-.-focus-::after {
+    content:'';
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    height: 100%;
+    width: 50%;
+    z-index:-1;
+  }
+  .datepicker--cell.-range-to-.-focus-::before {
+    content:'';
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    height: 100%;
+    width: 50%;
+    z-index:-1;
+  }
+  .datepicker--cell.-range-to-, .datepicker--cell.-range-from- {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #ffffff;
+  }
 .datepicker--days-names {
   display: -webkit-flex;
   display: -ms-flexbox;
