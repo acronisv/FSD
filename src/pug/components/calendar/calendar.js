@@ -9,8 +9,15 @@ $('.js-calendar__elem-start').datepicker({
         $(".js-calendar__elem-end").val(fd.split("-")[1]);
     },
     range: true,
-    multipleDatesSeparator: ' - '
+    multipleDatesSeparator: ' - ',
+    clearButton: 'true',
+    todayButton: 'true'
 });
+
+// $.fn.datepicker.language['ru'] = {
+//     today: 'Применить',
+//     clear: 'Очистить'
+// }
 
 $('.js-calendar__elem').datepicker({
     range: true,

@@ -12,3 +12,14 @@ import './../../components/booking/booking.js';
 import './../../components/login/login.js';
 import './../../components/room-card/room-card.js';
 import './../../components/rate-btn/rate-btn.js';
+
+$('.cards-datepicker').datepicker({
+    onSelect: function (fd, d, picker) { 
+        $(".js-calendar__elem-start").val(fd.split("-")[0]);
+        $(".js-calendar__elem-end").val(fd.split("-")[1]);
+    },
+    range: true,
+    multipleDatesSeparator: ' - ',
+    clearButton: 'true',
+    todayButton: 'true'
+});
