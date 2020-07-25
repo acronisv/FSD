@@ -7,12 +7,16 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .datepicker-here {
-        width: 320px;
-        margin-bottom: 163px;
+    &__column {
+        margin-bottom: 40px;
+    }
+
+    &__datepicker {
+        margin-bottom: 50px;
 
     }
 }
+
 .room-search {
     margin-bottom: 40px;
 }

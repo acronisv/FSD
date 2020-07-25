@@ -11,13 +11,12 @@ $('.js-calendar__elem-start').datepicker({
     range: true,
     multipleDatesSeparator: ' - ',
     clearButton: 'true',
-    todayButton: 'true'
+    todayButton: 'true',
+    language: {
+        today: 'Применить',
+        clear: 'Очистить'
+    }
 });
-
-// $.fn.datepicker.language['ru'] = {
-//     today: 'Применить',
-//     clear: 'Очистить'
-// }
 
 $('.js-calendar__elem').datepicker({
     range: true,
