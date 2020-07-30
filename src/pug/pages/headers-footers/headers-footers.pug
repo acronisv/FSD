@@ -1,10 +1,13 @@
 extend ../../layout/main
 include ../../components/head/head
+include ../../components/header/header
+include ../../components/button/button
 
 block variables
     - var title = "Headers and footers"
     - var description = "Headers and footers page"
 
 block content
-    +head
-    .container
+    .page-wrap
+        +head
+        +header
