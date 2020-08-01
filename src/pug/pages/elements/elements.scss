@@ -1,19 +1,45 @@
+@import './../../../assets/scss/main.scss';
+@import './../../../assets/scss/utils/vars.scss';
+
 .form-elements {
     font-family: 'Montserrat';
-    padding: 143px 0;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 320px 260px 320px;
+    grid-column-gap: 129px;
+    @extend .container;
+    
 
     &__wrapper {
         padding-bottom: 20px;
         width: 320px;
+
+        &--group1 {
+            margin-bottom: 60px;
+        }
         
         &--group2 {
-            .form-elements__item {
-                margin-bottom: 36px;
-            }
+            grid-row-start: 2;
+            grid-row-end: 5;
         }
 
         &--group3 {
             flex-grow: 0;
+        }
+
+        &--group5 {
+            padding-top: 320px;
+        }
+
+        &--group6 {
+            grid-row-start: 2;
+            grid-column-start:2;
+            padding-top: 320px;    
+        }
+
+        &--group7 {
+            grid-column-start:2;
+            margin-top: 190px;
         }
     }
 
@@ -35,9 +61,59 @@
         &--wide {
             width: 711px;
         }
+
+        &--dropdown {
+            margin-bottom: 24px;
+        }
+
+        &--masked {
+            margin-bottom: 36px;
+        }
+
+        &--date-dropdown {
+            margin-bottom: 38px;
+        }
+
+        &--filter-date {
+            margin-bottom: 40px;
+        }
+
+        &--expandable-list {
+            margin-top: 172px;
+            margin-bottom: 33px;
+        }
+
+        &--information {
+            margin-top: 40px;
+        }
+
+        &--checkbox-btn {
+            margin-bottom: 42px;
+        }
+
+        &--radio-btn {
+            margin-bottom: 36px;
+        }
+
+        &--toggle {
+            margin-bottom: 48px;
+        }
+
+        &--like-btn {
+            margin-bottom: 34px;
+        }
+
+        &--range-slider{
+            margin-top: -4px;
+            margin-bottom: 36px;
+        }
+
+        &--buttons {
+            margin-bottom: 40px;
+        }
     }
 
     &__item-row {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
     }
 }

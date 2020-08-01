@@ -16,64 +16,65 @@ include ../../components/pagination/pagination
 include ../../components/bullet-list/bullet-list
 include ../../components/rich-checkbox/rich-checkbox
 include ../../components/comments/comments
+include ../../components/head/head
 
 block variables
     - var title = "Form elements"
     - var description = "Form elements page"
 
 block content
-    .container
+        +head
         .form-elements
-            .form-elements__wrapper
+            .form-elements__wrapper.form-elements__wrapper--group1
                 .form-elements__item
                     +input({label:'text field', name:'name1', id:'textfield-id1', placeholder:'Email'})
                 .form-elements__item
                     +input({label:'text field', name:'input2', id:'textfield-id2', placeholder:'This is pretty awesome'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--dropdown
                     +dropdown({label:'dropdown', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--masked
                     +input({label:'masked text field', name:'name1', id:'masked-textfield', placeholder:'ДД.ММ.ГГГГ'})
-            .form-elements__wrapper.form-elements__wrapper--group2
-                .form-elements__item
+                .form-elements__item.form-elements__item--date-dropdown
                     +calendar({type:'dual', labelFrom:'date dropdown', labelTo:'date dropdown'})
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--filter-date
                     +calendar({label:'filter date dropdown'})
                 .form-elements__item.form-elements__item--small-width
                     +field-subscribe({})
+            .form-elements__wrapper.form-elements__wrapper--group2
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop1', placeholder:'Удобства'})
                 .form-elements__item.form-elements__item--small-width
                     +dropdown({label:'dropdown', name:'drop2', placeholder:'Удобства'})
-                .form-elements__item.form-elements__item--small-width
-                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
+                .form-elements__item.form-elements__item--small-width.form-elements__item--expandable-list
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
                 .form-elements__item.form-elements__item--small-width
                     +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--information
                     +information({title:'Комфорт', text:'Шумопоглощающие стены'})
                     +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
             .form-elements__wrapper.form-elements__wrapper--group3
-                .form-elements__item.form-elements__item--small-width
+                .form-elements__item.form-elements__item--small-width.form-elements__item--checkbox-btn
                     .form-elements__title= 'Checkbox Buttons'
                     +checkbox({name:'cb_id1', title:'Можно курить'})
                     +checkbox({name:'cb_id2', title:'Можно с питомцами'})
                     +checkbox({name:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--radio-btn
                     .form-elements__title= 'Radio buttons'
                     +radio({radio1:'Мужчина', radio2:'Женщина'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--toggle
                     .form-elements__title= 'Toggle'
                     +toggle({title: 'Получать спецпредложения'})
                     +toggle({title: 'Получать спецпредложения'})
-                .form-elements__item
+                .form-elements__item.form-elements__item--like-btn
                     .form-elements__title= 'Like button'
                     +like-btn
                 .form-elements__item
                     .form-elements__title= 'Rate button'
                     +rate-btn
-                    +rate-btn
-                .form-elements__item.form-elements__item--small-width
+            .form-elements__wrapper.form-elements__wrapper--group4
+                .form-elements__item.form-elements__item--small-width.form-elements__item--range-slider
                     +range-slider({})
-                .form-elements__item
+                .form-elements__item.form-elements__item--buttons
                     .form-elements__title= 'Buttons'
                     .form-elements__item-row
                         +button({})
@@ -87,9 +88,12 @@ block content
                 .form-elements__item
                     .form-elements__title= 'Pagination'
                     +pagination({})
+            .form-elements__wrapper.form-elements__wrapper--group5
                 .form-elements__item.form-elements__item--small-width
                     +bullet-list({items:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
+            .form-elements__wrapper.form-elements__wrapper--group6
                 .form-elements__item.form-elements__item--small-width
                     +rich-checkbox({items:['Широкий коридор','Помощник для инвалида'], desc:['Ширина коридоров в номере не менее 91 см.','На 1 этаже вас встретит специалист и проводит до номера.']})
+            .form-elements__wrapper.form-elements__wrapper--group7
                 .form-elements__item.form-elements__item--wide
                     +comments()

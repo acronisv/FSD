@@ -1,0 +1,17 @@
+extend ../../layout/main
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/button/button
+include ../../components/footer/footer
+include ../../components/field-subscribe/field-subscribe
+
+block variables
+    - var title = "Headers and footers"
+    - var description = "Headers and footers page"
+
+block content
+    .page-wrap
+        +head
+        +header({})
+        +header({state:'logged', name:'Юлий Цезарь'})
+        +footer

@@ -11,9 +11,11 @@
     }
  
     &__label {
+        font-family: 'Montserrat';
         text-transform: uppercase;
         font-weight: bold;
         font-size: 12px;
+        color: $dark100;
     }
 
     &__elem {

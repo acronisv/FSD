@@ -1,0 +1,32 @@
+extend ../../layout/main
+include ../../components/head/head
+include ../../components/input/input
+include ../../components/room-search/room-search
+include ../../components/calendar/calendar
+include ../../components/dropdown/dropdown
+include ../../components/button/button
+include ../../components/registration/registration
+include ../../components/radio/radio
+include ../../components/toggle/toggle
+include ../../components/booking/booking
+include ../../components/login/login
+include ../../components/room-card/room-card
+include ../../components/rate-btn/rate-btn
+
+block variables
+    - var title = "Cards"
+    - var description = "Cards page"
+
+block content
+    +head
+    .cards
+        .cards__column
+            +room-search
+            +registration
+        .cards__column
+            +booking
+            +login
+        .cards__column
+            .cards__datepicker
+            +room-card({img:['1','4','2','6']})
+            +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})

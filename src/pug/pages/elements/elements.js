@@ -17,7 +17,8 @@ import './../../components/button/button.js';
 import './../../components/pagination/pagination.js';
 import './../../components/bullet-list/bullet-list.js';
 import './../../components/rich-checkbox/rich-checkbox.js';
-import './../../components/comments/comments';
+import './../../components/comments/comments.js';
+import './../../components/head/head.js';
 
 //1 пример
 $(function(){

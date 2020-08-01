@@ -1,0 +1,7 @@
+mixin room-search
+    .room-search
+        h2.room-search__header Найдем номера под ваши пожелания
+        form.room-search__form(method='post')
+            +calendar({type:'dual', labelFrom:'Прибытие', labelTo:'Выезд'})
+            +dropdown({label:'Гости', name:'guests', id:'guest-dropdown', placeholder:'Сколько гостей'})
+            +button({title: 'Подобрать номер',type: 'submit'})
