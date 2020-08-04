@@ -31,7 +31,8 @@ module.exports = {
         colors: `${PATHS.src}/pug/pages/colors/colors.js`,
         elements: `${PATHS.src}/pug/pages/elements/elements.js`,
         cards: `${PATHS.src}/pug/pages/cards/cards.js`,
-        headers_footers: `${PATHS.src}/pug/pages/headers-footers/headers-footers.js`
+        headers_footers: `${PATHS.src}/pug/pages/headers-footers/headers-footers.js`,
+        landing: `${PATHS.src}/pug/pages/landing/landing.js`
     },
     output: {
         path: PATHS.dist,
@@ -168,6 +169,12 @@ module.exports = {
             template: `${PAGES_DIR}/headers-footers/headers-footers.pug`,
             filename: './headers-footers/headers-footers.html',
             chunks: ['headers_footers', 'app'],
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/landing/landing.pug`,
+            filename: './landing/landing.html',
+            chunks: ['landing', 'app'],
             inject: true
         }),
         new webpack.ProvidePlugin({
