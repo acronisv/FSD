@@ -203,7 +203,7 @@
 .datepickers-container {
   position: absolute;
   left: 0;
-  top: 0; }
+  top: -7px; }
   @media print {
     .datepickers-container {
       display: none; } }
@@ -266,6 +266,7 @@
     display: none; }
 
 .datepicker--pointer {
+  display: none;
   position: absolute;
   background: #fff;
   border-top: 1px solid #dbdbdb;
@@ -363,6 +364,12 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .datepicker--nav-action span {
+    font-size: 24px; }
+  .datepicker--nav-action:first-child span{
+    margin-left: 3px; }
+  .datepicker--nav-action:last-child span{
+    margin-right: 3px; }
   .datepicker--nav-action:hover {
     background: #f0f0f0; }
   .datepicker--nav-action.-disabled- {

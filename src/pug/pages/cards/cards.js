@@ -22,6 +22,9 @@ $('.cards__datepicker').datepicker({
     multipleDatesSeparator: ' - ',
     clearButton: 'true',
     todayButton: 'true',
+    dateFormat: 'd M',
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>',
     navTitles: {
         days: 'MM yyyy'
     },

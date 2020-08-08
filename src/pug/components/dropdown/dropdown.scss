@@ -1,6 +1,8 @@
 @import './../../../assets/scss/utils/vars.scss';
 .dropdown {
     position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
 
     &__content {
         display: flex;
@@ -32,8 +34,10 @@
                 background-color: $dark75;
             }
         }
+
         &:hover, &:focus {
             border: 1px solid $dark50;
+
             &::placeholder{
                 color: $dark75;
             }
@@ -57,6 +61,7 @@
         right: 0;
         bottom: 0;
         background-color: transparent;
+
         &:before {
             position: absolute;
             display: block;
@@ -68,6 +73,7 @@
             background-color: $dark50;
             transform: rotate(45deg);
         }
+
         &:after {
             position: absolute;
             display: block;
@@ -81,12 +87,10 @@
         }
     }
 
-    
-
     &__options {
         position: absolute;
         width: 100%;
-        padding: 6px 7px 13px 15px;
+        padding: 6px 7px 0px 15px;
         border: 1px solid $dark50;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
@@ -109,6 +113,7 @@
         justify-content: space-between;
         align-items: center;
     }
+
     &__btn-minus, &__btn-plus {
         width: 30px;
         height: 30px;
@@ -134,4 +139,28 @@
     &__quantity{
         font-weight: bold;
     }
+
+    &__buttons {
+        padding: 13px 0 11px 0;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__cancel, &__apply {
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 15px;
+        font-size: 12px;
+        background: none;
+        padding: 0;
+    }
+
+    &__cancel {
+        color: $dark50;
+    }
+
+    &__apply {
+        color: $primary;
+    } 
 }

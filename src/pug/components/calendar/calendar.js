@@ -12,6 +12,12 @@ $('.js-calendar__elem-start').datepicker({
     multipleDatesSeparator: ' - ',
     clearButton: 'true',
     todayButton: 'true',
+    dateFormat: 'd M',
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>',
+    navTitles: {
+        days: 'MM yyyy'
+    },
     language: {
         today: 'Применить',
         clear: 'Очистить'
@@ -21,7 +27,18 @@ $('.js-calendar__elem-start').datepicker({
 $('.js-calendar__elem').datepicker({
     range: true,
     multipleDatesSeparator: ' - ',
-    dateFormat: 'd M'
+    clearButton: 'true',
+    todayButton: 'true',
+    dateFormat: 'd M',
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>',
+    navTitles: {
+        days: 'MM yyyy'
+    },
+    language: {
+        today: 'Применить',
+        clear: 'Очистить'
+    }
 });
 // Доступ к экземпляру объекта
 //$('.js-calendar__elem-start').data('datepicker');
