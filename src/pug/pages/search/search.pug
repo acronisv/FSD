@@ -1,0 +1,58 @@
+extend ../../layout/main
+include ../../components/dropdown/dropdown
+include ../../components/header/header
+include ../../components/button/button
+include ../../components/footer/footer
+include ../../components/field-subscribe/field-subscribe
+include ../../components/calendar/calendar
+include ../../components/checkbox/checkbox
+include ../../components/range-slider/range-slider
+include ../../components/rich-checkbox/rich-checkbox
+include ../../components/checkbox-list/checkbox-list
+include ../../components/pagination/pagination
+include ../../components/room-card/room-card
+include ../../components/rate-btn/rate-btn
+
+block variables
+    - var title = "Search room"
+    - var description = "Search room page"
+
+block content
+    +header({})
+    main.search-page
+        .search-page__wrap
+            aside.search-page__filter.room-filter
+                .room-filter__item.room-filter__item--calendar
+                    +calendar({label:'Даты пребывания в отеле'})
+                .room-filter__item.room-filter__item--guests
+                    +dropdown({label:'Гости', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
+                .room-filter__item.room-filter__item--price
+                    +range-slider({name:'Диапазон цены'})
+                    p.room-filter__item-text Стоимость за сутки пребывания в номере
+                .room-filter__item.room-filter__item--checkbox-group
+                    h3.room-filter__item-header Checkbox buttons
+                    +checkbox({name:'cb_id1', title:'Можно курить'})
+                    +checkbox({name:'cb_id2', title:'Можно с питомцами'})
+                    +checkbox({name:'cb_id3', title:'Можно пригласить гостей (до 10 человек)'})
+                .room-filter__item.room-filter__item--availability
+                    +rich-checkbox({name:'Доступность', items:['Широкий коридор','Помощник для инвалидов'], desc:['Ширина коридоров в номере не менее 91 см.','На 1 этаже вас встретит специалист и проводит до номера.']})
+                .room-filter__item.room-filter__item--comfort
+                    +dropdown({label:'Удобства номера', name:'name3', id:'dropdown-id1', placeholder:'Сколько гостей'})
+                .room-filter__item.room-filter__item
+                    +checkbox-list({name:'Дополнительные удобства', items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
+            section.search-page__results
+                h2.search-page__header Номера, которые мы для вас подобрали
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +room-card({img:['2','3','4','5'], id:'840', class:'', price:'9 900', reviews:'65'})
+                +pagination
+    +footer

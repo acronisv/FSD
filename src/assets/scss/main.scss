@@ -76,20 +76,20 @@ li {
   list-style-type: none;
 }
 
-section,
-.section {
-  position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $smDesktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $tableWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    padding: 20px 0;
-  }
-}
+// section,
+// .section {
+//   position: relative;
+//   padding: 40px 0;
+//   @media screen and (max-width: $smDesktopWidth) {
+//     padding: 36px 0;
+//   }
+//   @media screen and (max-width: $tableWidth) {
+//     padding: 28px 0;
+//   }
+//   @media screen and (max-width: $phoneWidth) {
+//     padding: 20px 0;
+//   }
+// }
 
 .wrapper {
   display: flex;

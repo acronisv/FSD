@@ -554,9 +554,9 @@ Build date: 2019-12-19 16:51:02
   background-color: rgba(222, 228, 236, 0.5);
 }
 .irs--round .irs-handle {
-  top: 32px;
-  width: 12px;
-  height: 12px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
   border: 4px solid #006cfa;
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   border: 2px solid #FFFFFF;
