@@ -19,6 +19,9 @@
         &--active {
             background: $gradient;
             color: #ffffff;
+            .pagination__link {
+                color: #ffffff;
+            }
         }
 
         &:last-child {
@@ -29,11 +32,22 @@
             font-size: 24px;
             line-height: 20px;
             font-weight: normal;
+            .pagination__link {
+                color: #ffffff;
+                font-size: 24px;
+                line-height: 20px;
+            }
         }
     }
 
+    &__link {
+        color: $dark50;
+        line-height: 15px;
+        font-size: 12px;
+    }
+
     &__note {
-        padding: 7px 0 0 6px;
+        padding: 8px 0 0 6px;
     }
     
 }

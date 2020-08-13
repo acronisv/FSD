@@ -1,4 +1,4 @@
-mixin dropdown({label='label', id, name,option1='взрослые',option2='дети',option3='младенцы',placeholder=""})
+mixin dropdown({label='label', id, name, option1='взрослые', option2='дети', option3='младенцы', placeholder="", buttons=""})
     .dropdown.js-dropdown
         .dropdown__content.js-dropdown__content
             label.dropdown__label(for=name)= label
@@ -26,6 +26,7 @@ mixin dropdown({label='label', id, name,option1='взрослые',option2='де
                     button.dropdown__btn-minus -
                     span.dropdown__quantity 0
                     button.dropdown__btn-plus +
-            .dropdown__buttons
-                button.dropdown__cancel Очистить
-                button.dropdown__apply Применить
+            if buttons=='true'
+                .dropdown__buttons
+                    button.dropdown__cancel Очистить
+                    button.dropdown__apply Применить
