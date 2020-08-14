@@ -11,7 +11,7 @@ include ../../components/rich-checkbox/rich-checkbox
 include ../../components/checkbox-list/checkbox-list
 include ../../components/pagination/pagination
 include ../../components/room-card/room-card
-include ../../components/rate-btn/rate-btn
+include ../../components/rating/rating
 
 block variables
     - var title = "Search room"
@@ -42,18 +42,18 @@ block content
                     +checkbox-list({name:'Дополнительные удобства', items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
             section.search-page__results
                 h2.search-page__header Номера, которые мы для вас подобрали
-                +room-card({img:['1','3','4','5'], id:'888', status:'люкс', price:'9 900', reviews:'145'})
-                +room-card({img:['2','3','4','5'], id:'840', price:'9 900', reviews:'65'})
-                +room-card({img:['4','3','4','5'], id:'980', status:'люкс', price:'8 500', reviews:'35'})
-                +room-card({img:['5','3','4','5'], id:'856', price:'7 300', reviews:'19'})
-                +room-card({img:['6','3','4','5'], id:'740', price:'6 000', reviews:'44'})
-                +room-card({img:['7','3','4','5'], id:'982', price:'5 800', reviews:'56'})
-                +room-card({img:['8','3','4','5'], id:'678', price:'5 500', reviews:'45'})
-                +room-card({img:['9','3','4','5'], id:'450', price:'5 300', reviews:'39'})
-                +room-card({img:['10','3','4','5'], id:'350', price:'5 000', reviews:'77'})
-                +room-card({img:['11','3','4','5'], id:'666', price:'5 000', reviews:'25'})
-                +room-card({img:['12','3','4','5'], id:'444', price:'5 000', reviews:'15'})
-                +room-card({img:['3','3','4','5'], id:'352', price:'5 000', reviews:'55'})
+                +room-card({img:['1','3','4','5'], id:'888', status:'люкс', price:'9 900', reviews:'145', stars:'5'})
+                +room-card({img:['2','3','4','5'], id:'840', price:'9 900', reviews:'65', stars:'4'})
+                +room-card({img:['4','3','4','5'], id:'980', status:'люкс', price:'8 500', reviews:'35', stars:'3'})
+                +room-card({img:['5','3','4','5'], id:'856', price:'7 300', reviews:'19', stars:'5'})
+                +room-card({img:['6','3','4','5'], id:'740', price:'6 000', reviews:'44', stars:'4'})
+                +room-card({img:['7','3','4','5'], id:'982', price:'5 800', reviews:'56', stars:'3'})
+                +room-card({img:['8','3','4','5'], id:'678', price:'5 500', reviews:'45', stars:'5'})
+                +room-card({img:['9','3','4','5'], id:'450', price:'5 300', reviews:'39', stars:'4'})
+                +room-card({img:['10','3','4','5'], id:'350', price:'5 000', reviews:'77', stars:'3'})
+                +room-card({img:['11','3','4','5'], id:'666', price:'5 000', reviews:'25', stars:'5'})
+                +room-card({img:['12','3','4','5'], id:'444', price:'5 000', reviews:'15', stars:'3'})
+                +room-card({img:['3','3','4','5'], id:'352', price:'5 000', reviews:'55', stars:'3'})
                 .search-page__pagination
                     +pagination
     +footer

@@ -11,4 +11,4 @@ import './../../components/range-slider/range-slider.js';
 import './../../components/rich-checkbox/rich-checkbox.js';
 import './../../components/pagination/pagination.js';
 import './../../components/room-card/room-card.js';
-import './../../components/rate-btn/rate-btn.js';
+import './../../components/rating/rating.js';

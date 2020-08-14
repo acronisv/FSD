@@ -1,9 +1,9 @@
 @import './../../../assets/scss/utils/vars.scss';
-.rate {
+.rating {
     &__value {
         display: inline-block;
         font-family: 'Material Icons';
-        cursor: pointer;
+        cursor: default;
         font-size: 24px;
         color: $primary;
     }

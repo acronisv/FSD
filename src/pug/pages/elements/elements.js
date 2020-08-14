@@ -11,7 +11,7 @@ import './../../components/information/information.js';
 import './../../components/radio/radio.js';
 import './../../components/toggle/toggle.js';
 import './../../components/like-btn/like-btn.js';
-import './../../components/rate-btn/rate-btn.js';
+import './../../components/rating/rating.js';
 import './../../components/range-slider/range-slider.js';
 import './../../components/button/button.js';
 import './../../components/pagination/pagination.js';

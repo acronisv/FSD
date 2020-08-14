@@ -11,7 +11,7 @@ import './../../components/toggle/toggle.js';
 import './../../components/booking/booking.js';
 import './../../components/login/login.js';
 import './../../components/room-card/room-card.js';
-import './../../components/rate-btn/rate-btn.js';
+import './../../components/rating/rating.js';
 
 $('.cards__datepicker').datepicker({
     onSelect: function (fd, d, picker) { 

@@ -9,7 +9,7 @@ include ../../components/information/information
 include ../../components/radio/radio
 include ../../components/toggle/toggle
 include ../../components/like-btn/like-btn
-include ../../components/rate-btn/rate-btn
+include ../../components/rating/rating
 include ../../components/range-slider/range-slider
 include ../../components/button/button
 include ../../components/pagination/pagination
@@ -70,7 +70,7 @@ block content
                     +like-btn
                 .form-elements__item
                     .form-elements__title= 'Rate button'
-                    +rate-btn
+                    +rating({})
             .form-elements__wrapper.form-elements__wrapper--group4
                 .form-elements__item.form-elements__item--small-width.form-elements__item--range-slider
                     +range-slider({})
