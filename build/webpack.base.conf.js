@@ -33,7 +33,8 @@ module.exports = {
         cards: `${PATHS.src}/pug/pages/cards/cards.js`,
         headers_footers: `${PATHS.src}/pug/pages/headers-footers/headers-footers.js`,
         landing: `${PATHS.src}/pug/pages/landing/landing.js`,
-        search: `${PATHS.src}/pug/pages/search/search.js`
+        search: `${PATHS.src}/pug/pages/search/search.js`,
+        room_details: `${PATHS.src}/pug/pages/room-details/room-details.js`
     },
     output: {
         path: PATHS.dist,
@@ -182,6 +183,12 @@ module.exports = {
             template: `${PAGES_DIR}/search/search.pug`,
             filename: './search/search.html',
             chunks: ['search', 'app'],
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/room-details/room-details.pug`,
+            filename: './room-details/room-details.html',
+            chunks: ['room_details', 'app'],
             inject: true
         }),
         new webpack.ProvidePlugin({
