@@ -19,19 +19,19 @@
   }
 */
 @font-face {
-  font-family: "OpenSans";
-  src: url('/assets/fonts/open-sans/Regular/OpenSans-Regular.woff') format('woff'), // Pretty Modern Browsers
-       url('/assets/fonts/open-sans/Regular/OpenSans-Regular.ttf')  format('truetype'), // Safari, Android, iOS
-       url('/assets/fonts/open-sans/Regular/OpenSans-Regular.svg') format('svg'); // Legacy iOS
+  font-family: "Open Sans";
+  src: url('/assets/fonts/Open-sans/Regular/OpenSans-Regular.woff') format('woff'), // Pretty Modern Browsers
+       url('/assets/fonts/Open-sans/Regular/OpenSans-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+       url('/assets/fonts/Open-sans/Regular/OpenSans-Regular.svg') format('svg'); // Legacy iOS
        font-weight: normal;
        font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: url('/assets/fonts/open-sans/Bold/OpenSans-Bold.woff') format('woff'), // Pretty Modern Browsers
-       url('/assets/fonts/open-sans/Bold/OpenSans-Bold.ttf')  format('truetype'), // Safari, Android, iOS
-       url('/assets/fonts/open-sans/Bold/OpenSans-Bold.svg') format('svg'); // Legacy iOS
+  font-family: "Open Sans";
+  src: url('/assets/fonts/Open-sans/Bold/OpenSans-Bold.woff') format('woff'), // Pretty Modern Browsers
+       url('/assets/fonts/Open-sans/Bold/OpenSans-Bold.ttf')  format('truetype'), // Safari, Android, iOS
+       url('/assets/fonts/Open-sans/Bold/OpenSans-Bold.svg') format('svg'); // Legacy iOS
        font-weight: bold;
        font-style: normal;
 }

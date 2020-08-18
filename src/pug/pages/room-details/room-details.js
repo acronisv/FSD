@@ -1,5 +1,5 @@
-import './room-details.scss';
-import './../../components/head/head.js';
+import './room-details.scss'
+import './../../components/head/head.js'
 import './../../components/dropdown/dropdown'
 import './../../components/header/header.js'
 import './../../components/button/button.js'
@@ -10,3 +10,4 @@ import './../../components/like-btn/like-btn.js'
 import './../../components/comments/comments.js'
 import './../../components/information/information.js'
 import './../../components/booking/booking.js'
+import './../../components/bullet-list/bullet-list.js'
