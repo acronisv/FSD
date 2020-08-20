@@ -11,8 +11,9 @@
     }
 
     &__info {
-        width: 290px;
-        .information__wrapper:last-child {
+        width: 280px;
+        margin-right: 81px;
+        .information:last-child {
             margin-bottom: 15px;
             border: none;
         }
@@ -25,16 +26,32 @@
     }
 
     &__reviews {
-        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
         margin-bottom: 10px;
+        justify-content: space-between;
+
+        .room-details__header {
+            margin-bottom: 20px;
+        }
+
+        &-count {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: $dark50;
+            margin-top: 6px;
+        }
     }
 
     .comment {
-        margin-bottom: 22px;
+        margin-bottom: 23px;
     }
 
     &__header {
-        //font-family: 'Quicksand';
+        font-family: 'Open Sans';
         font-style: normal;
         font-weight: bold;
         font-size: 19px;

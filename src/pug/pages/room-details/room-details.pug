@@ -10,7 +10,7 @@ include ../../components/comments/comments
 include ../../components/information/information
 include ../../components/booking/booking
 include ../../components/bullet-list/bullet-list
-
+include ../../components/pie-chart/pie-chart
 
 block variables
     - var title = "Room details"
@@ -28,6 +28,7 @@ block content
                     +information({title:'Уют', text:'Номер оснащен камином', icon: 'whatshot'})
                 .room-details__vote
                     h3.room-details__header Впечатления от номера
+                    +pie-chart({})
                 .room-details__reviews
                     h3.room-details__header Отзывы посетителей номера
                     span.room-details__reviews-count 2 отзыва
