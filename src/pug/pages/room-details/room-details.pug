@@ -19,6 +19,11 @@ block variables
 block content
     +header({})
     main.room-details
+        section.room-details__gallery
+            .room-details__gallery-main
+            .room-details__gallery-secondary
+                .room-details__gallery-top
+                .room-details__gallery-bottom
         .room-details__wrap
             section.room-details__content
                 .room-details__info
@@ -28,7 +33,7 @@ block content
                     +information({title:'Уют', text:'Номер оснащен камином', icon: 'whatshot'})
                 .room-details__vote
                     h3.room-details__header Впечатления от номера
-                    +pie-chart({})
+                    +pie-chart({best:'25', good:'25', normal:'50'})
                 .room-details__reviews
                     h3.room-details__header Отзывы посетителей номера
                     span.room-details__reviews-count 2 отзыва
