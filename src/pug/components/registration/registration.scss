@@ -6,9 +6,16 @@
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
 
     &__header {
+        font-family: 'Open Sans';
         margin-bottom: 14px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     &__option {
@@ -26,15 +33,15 @@
     }
 
     &__surname {
-        margin-bottom: 11px;
+        margin-bottom: 8px;
     }
 
     &__gender {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
     }
 
     &__date {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
     &__email{

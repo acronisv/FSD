@@ -34,7 +34,9 @@ module.exports = {
         headers_footers: `${PATHS.src}/pug/pages/headers-footers/headers-footers.js`,
         landing: `${PATHS.src}/pug/pages/landing/landing.js`,
         search: `${PATHS.src}/pug/pages/search/search.js`,
-        room_details: `${PATHS.src}/pug/pages/room-details/room-details.js`
+        room_details: `${PATHS.src}/pug/pages/room-details/room-details.js`,
+        registry: `${PATHS.src}/pug/pages/registry/registry.js`,
+        sign_in: `${PATHS.src}/pug/pages/sign-in/sign-in.js`
     },
     output: {
         path: PATHS.dist,
@@ -189,6 +191,18 @@ module.exports = {
             template: `${PAGES_DIR}/room-details/room-details.pug`,
             filename: './room-details/room-details.html',
             chunks: ['room_details', 'app'],
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/registry/registry.pug`,
+            filename: './registry/registry.html',
+            chunks: ['registry', 'app'],
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: `${PAGES_DIR}/sign-in/sign-in.pug`,
+            filename: './sign-in/sign-in.html',
+            chunks: ['sign_in', 'app'],
             inject: true
         }),
         new webpack.ProvidePlugin({

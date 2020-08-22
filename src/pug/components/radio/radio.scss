@@ -18,7 +18,7 @@
                 content:'';
                 position: absolute;
                 left: 4px;
-                top: 4px;
+                top: 6px;
                 height: 12px;
                 width: 12px;
                 background: $primary;
@@ -32,9 +32,15 @@
     }
 
     &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
         display: flex;
+        align-items: center;
         position: relative;
-        color: $dark50;
+        color: $dark75;
         &:before {
             content:'';
             display: block;

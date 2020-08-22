@@ -1,0 +1,19 @@
+extend ../../layout/main
+include ../../components/header/header
+include ../../components/button/button
+include ../../components/footer/footer
+include ../../components/field-subscribe/field-subscribe
+include ../../components/registration/registration
+include ../../components/input/input
+include ../../components/radio/radio
+include ../../components/toggle/toggle
+
+block variables
+    - var title = "Registration"
+    - var description = "Registration page"
+
+block content
+    +header({})
+    main.registry
+        +registration
+    +footer

@@ -1,0 +1,15 @@
+@import './../../../assets/scss/main.scss';
+@import './../../../assets/scss/utils/vars.scss';
+
+.sign-in {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 702px;
+    display: flex;
+    justify-content: center;
+    background-image: url('./img/sign-bg.png');
+    background-position: center bottom;
+    .login {
+        align-self: center;
+    }
+}
