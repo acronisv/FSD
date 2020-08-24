@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: $mainFont;
@@ -91,12 +92,22 @@ li {
 //   }
 // }
 
+.site-wrapper {
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
   min-width: 100vh;
+}
+
+.content {
+	flex: 1 0 auto;
 }
 
 .content-wrapper {

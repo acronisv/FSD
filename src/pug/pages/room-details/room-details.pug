@@ -17,35 +17,35 @@ block variables
     - var description = "Room details page"
 
 block content
-    +header({})
-    main.room-details
-        section.room-details__gallery
-            .room-details__gallery-main
-            .room-details__gallery-secondary
-                .room-details__gallery-top
-                .room-details__gallery-bottom
-        .room-details__wrap
-            section.room-details__content
-                .room-details__info
-                    h3.room-details__header Сведения о номере
-                    +information({title:'Комфорт', text:'Шумопоглощающие стены'})
-                    +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
-                    +information({title:'Уют', text:'Номер оснащен камином', icon: 'whatshot'})
-                .room-details__vote
-                    h3.room-details__header Впечатления от номера
-                    +pie-chart({best:'25', good:'25', normal:'50'})
-                .room-details__reviews
-                    h3.room-details__header Отзывы посетителей номера
-                    span.room-details__reviews-count 2 отзыва
-                    +comments({})
-                    +comments({name:'Патрисия Стёклышкова', time:'Неделю назад', text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
-                .room-details__notes
-                    .room-details__rules
-                        h3.room-details__header Правила
-                        +bullet-list({name:'', items:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
-                    .room-details__cancel
-                        h3.room-details__header Отмена
-                        p.room-details__cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-            aside.room-details__booking
-                +booking
-    +footer
+        +header({})
+        main.content.room-details
+            section.room-details__gallery
+                .room-details__gallery-main
+                .room-details__gallery-secondary
+                    .room-details__gallery-top
+                    .room-details__gallery-bottom
+            .room-details__wrap
+                section.room-details__content
+                    .room-details__info
+                        h3.room-details__header Сведения о номере
+                        +information({title:'Комфорт', text:'Шумопоглощающие стены'})
+                        +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
+                        +information({title:'Уют', text:'Номер оснащен камином', icon: 'whatshot'})
+                    .room-details__vote
+                        h3.room-details__header Впечатления от номера
+                        +pie-chart({best:'25', good:'25', normal:'50'})
+                    .room-details__reviews
+                        h3.room-details__header Отзывы посетителей номера
+                        span.room-details__reviews-count 2 отзыва
+                        +comments({})
+                        +comments({name:'Патрисия Стёклышкова', time:'Неделю назад', text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+                    .room-details__notes
+                        .room-details__rules
+                            h3.room-details__header Правила
+                            +bullet-list({name:'', items:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
+                        .room-details__cancel
+                            h3.room-details__header Отмена
+                            p.room-details__cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                aside.room-details__booking
+                    +booking
+        +footer
