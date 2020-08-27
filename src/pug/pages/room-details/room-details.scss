@@ -6,6 +6,7 @@
 
     &__gallery {
         display: flex;
+        justify-content: center;
 
         &-main {
             flex-basis: 983px;
