@@ -142,6 +142,10 @@ module.exports = {
             {
                 from: `${PATHS.src}/static`,
                 to: ''
+            },
+            {
+                from: `${PATHS.src}/static/favicons`,
+                to: 'favicons'
             }
         ]),
 
