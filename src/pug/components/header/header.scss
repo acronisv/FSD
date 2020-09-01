@@ -1,11 +1,10 @@
 @import './../../../assets/scss/main.scss';
-@import './../../../assets/scss/utils/vars.scss';
 
 .header {
     display: flex;
     align-items: center;
     background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow: 0px 10px 20px $dark5;
     padding: 15px 0;
     &__wrap {
         display: flex;
@@ -20,10 +19,6 @@
         padding-top: 2px;
 
         &-name {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
             line-height: 30px;
             color: $dark50;
             border-left: 1px solid $dark10;
@@ -34,10 +29,12 @@
     }
     .btn {
         height: 34px;
+
         &__title {
             height: 30px;
             padding: 0 18px;
         }
+
         &--bordered {
             margin-right: 20px
         }
@@ -45,6 +42,7 @@
 
     .btn--submit {
         width: 196px;
+
         &:after {
             display: none;
         }
@@ -55,6 +53,7 @@
 .main-nav {
     display: flex;
     align-items: center;
+
     &__list {
         display: flex;
         justify-content: flex-start;
@@ -62,6 +61,7 @@
 
     &__item {
         margin-right: 20px;
+
         &--active {
             .main-nav__link{
                 font-weight: bold;
@@ -71,12 +71,13 @@
         &--dropdown {
             display: flex;
             align-items: center;
+
             &:after {
                 display: block;
                 font-family: 'Material icons';
                 width: 25px;
                 height: 21px;
-                font-size: 24px;
+                font-size: rem(24px);
                 color: $dark50;
                 content: 'keyboard_arrow_down';
             }
@@ -84,12 +85,9 @@
     }
 
     &__link {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
         line-height: 17px;
         color: $dark50;
+
         &:hover {
             color: $dark75;
         }

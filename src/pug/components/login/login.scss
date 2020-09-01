@@ -1,4 +1,4 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 
 .login {
     padding: 40px 30px 30px 30px;
@@ -10,12 +10,11 @@
     border: 1px solid rgba(0,0,0,.12);
 
     &__header {
-        margin-bottom: 14px;
-        font-family: 'Open sans';
-        font-style: normal;
+        font-family: $subFont;
         font-weight: bold;
-        font-size: 24px;
+        font-size: rem(24px);
         line-height: 30px;
+        margin-bottom: 14px;
     }
 
     &__email {
@@ -31,12 +30,7 @@
     }
 
     &__option {
-
         &-link {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
             line-height: 18px;
         }
 

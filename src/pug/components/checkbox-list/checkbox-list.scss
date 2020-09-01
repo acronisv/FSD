@@ -1,8 +1,7 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 .checkbox-list {
     &__text {
-        font-family: 'Montserrat';
-        font-size: 12px;
+        font-size: rem(12px);
         line-height: 15px;
         text-transform: uppercase;
         font-weight: 700;
@@ -32,6 +31,7 @@
                 background-color: $dark50;
                 transform: rotate(45deg);
             }
+
             &:after {
                 position: absolute;
                 display: block;
@@ -44,6 +44,7 @@
                 transform: rotate(-45deg);
             }
         }
+
         &--close {
             &:before {
                 position: absolute;
@@ -56,6 +57,7 @@
                 background-color: $dark50;
                 transform: rotate(-45deg);
             }
+            
             &:after {
                 position: absolute;
                 display: block;

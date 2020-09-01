@@ -1,5 +1,4 @@
 @import './../../../assets/scss/main.scss';
-@import './../../../assets/scss/utils/vars.scss';
 
 .main {
     background-image: url('img/landing-bg.png');
@@ -7,10 +6,6 @@
     background-position-x: center;
     background-size: cover;
     border-top: 1px solid transparent;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     line-height: 24px;
 
     &__wrap {

@@ -1,5 +1,4 @@
 @import './../../../assets/scss/main.scss';
-@import './../../../assets/scss/utils/vars.scss';
 
 .sign-in {
     padding-top: 20px;
@@ -10,6 +9,7 @@
     background-image: url('./img/sign-bg.png');
     background-position: center bottom;
     background-size: cover;
+    
     .login {
         align-self: center;
     }

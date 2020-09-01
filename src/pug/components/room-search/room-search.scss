@@ -1,10 +1,6 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 
 .room-search {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     line-height: 24px;
     width: 380px;
     padding: 40px 29px 30px 29px;
@@ -15,6 +11,7 @@
     background: #FFFFFF;
 
     &__header {
+        font-family: $subFont;
         margin-bottom: 20px;
     }
     .calendar {

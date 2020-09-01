@@ -1,4 +1,4 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 .calendar {
     display: flex;
     justify-content: space-between;
@@ -11,10 +11,9 @@
     }
  
     &__label {
-        font-family: 'Montserrat';
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 12px;
+        font-size: rem(12px);
         line-height: 15px;
         color: $dark100;
         margin-bottom: 5px;
@@ -29,7 +28,6 @@
         box-sizing: border-box;
         border-radius: 4px;
         padding: 13px 15px;
-
     }
 
     &__item-wrap {

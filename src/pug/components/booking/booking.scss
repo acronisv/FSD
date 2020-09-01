@@ -1,4 +1,4 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 .booking {
     width: 380px;
     padding: 44px 30px 30px 30px;
@@ -23,11 +23,11 @@
     }
 
     &__number {
+        font-family: $subFont;
         color: $dark100;
     }
     &__text {
         font-weight: bold;
-        font-size: 14px;
         line-height: 17px;
         &:after {
             content: '\20';
@@ -36,7 +36,7 @@
 
     &__id {
         font-weight: bold;
-        font-size: 24px;
+        font-size: rem(24px);
         &:after {
             content: '\20';
         }
@@ -44,15 +44,15 @@
 
     &__class {
         font-weight: bold;
-        font-size: 12px;
+        font-size: rem(12px);
         line-height: 15px;
         color: $primary;
-        font-family: 'Montserrat';
-        font-style: normal;
         text-transform: uppercase;
     }
 
     &__price {
+        display: flex;
+        align-items: flex-end;
         color: $dark50;
     }
 
@@ -63,10 +63,13 @@
         }
     }
 
+    &__interval {
+        font-size: rem(12px);
+        margin-left: 3px;
+    }
+
     &__calculator {
-        font-family: 'Montserrat';
         margin-bottom: 22px;
-        font-size: 14px;
         line-height: 18px;
     }
 
@@ -92,6 +95,10 @@
         display: flex;
         margin-bottom: 16px;
 
+        &-text {
+            margin-right: 4px;
+        }
+
         &-amount {
             position: relative;
             margin-left: auto;
@@ -102,11 +109,11 @@
 
             &:before {
                 font-family: 'Material icons';
-                font-size: 22px;
+                font-size: rem(24px);
                 content: 'info_outline';
                 color: $dark25;
                 position: absolute;
-                right: 79px;
+                right: 77px;
             }
         }
 
@@ -131,11 +138,11 @@
 
             &:before {
                 font-family: 'Material icons';
-                font-size: 22px;
+                font-size: rem(24px);
                 content: 'info_outline';
                 color: $dark25;
                 position: absolute;
-                right: 79px;
+                right: 77px;
             }
 
             &:after {
@@ -146,7 +153,8 @@
 
     &__total-price {
         display: flex;
-        font-size: 19px;
+        font-family: $subFont;
+        font-size: rem(19px);
         font-weight: bold;
         color: $dark100;
 

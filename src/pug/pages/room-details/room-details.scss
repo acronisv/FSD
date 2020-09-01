@@ -1,5 +1,4 @@
 @import './../../../assets/scss/main.scss';
-@import './../../../assets/scss/utils/vars.scss';
 
 .room-details {
     border-bottom: 1px solid rgba(31,32,65,.25);
@@ -50,6 +49,7 @@
     &__info {
         width: 280px;
         margin-right: 81px;
+
         .information:last-child {
             margin-bottom: 15px;
             border: none;
@@ -73,10 +73,6 @@
         }
 
         &-count {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
             line-height: 14px;
             color: $dark50;
             margin-top: 6px;
@@ -88,10 +84,10 @@
     }
 
     &__header {
-        font-family: 'Open Sans';
+        font-family: $subFont;
         font-style: normal;
         font-weight: bold;
-        font-size: 19px;
+        font-size: rem(19px);
         line-height: 24px;
         margin-bottom: 22px;
     }
@@ -104,6 +100,7 @@
 
     &__rules {
         max-width: 262px;
+
         .room-details__header {
             margin-left: 20px;
             margin-bottom: 17px;
@@ -113,14 +110,12 @@
     &__cancel {
         max-width: 341px;
         margin-right: 8px;
+
         .room-details__header {
             margin-bottom: 17px;
         }
+
         &-text {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
             line-height: 24px;
             color: $dark75;
         }

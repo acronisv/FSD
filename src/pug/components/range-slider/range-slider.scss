@@ -1,7 +1,9 @@
+@import './../../../assets/scss/main.scss';
+
 .slider {
     &__header {
         font-weight: bold;
-        font-size: 12px;
+        font-size: rem(12px);
         line-height: 15px;       
         text-transform: uppercase;
     }
@@ -21,6 +23,7 @@
             &:before {
                 content: '\20bd\20 - ';
             }
+
             &:after {
                 content: '\20bd';
             }

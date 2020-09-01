@@ -1,4 +1,3 @@
-@import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
@@ -98,22 +97,8 @@ li {
 	min-height: 100%;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vh;
-}
-
 .content {
 	flex: 1 0 auto;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .container {
@@ -152,5 +137,7 @@ li {
   margin-top: 3px;
 }
 
+// $text-sm: rem(12px);
+// $text-md: rem(19px);
 // Modules:
 // example: @import "modules/my-module.scss";

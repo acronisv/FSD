@@ -1,20 +1,13 @@
 @import './../../../assets/scss/main.scss';
-@import './../../../assets/scss/utils/vars.scss';
 
 .footer {
     flex: 0 0 auto;
     background-color: #ffffff;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     box-shadow: 0px 1px 0px $dark10;
 
     &__wrap {
         @extend .container;
         display: flex;
-        // justify-content: space-between;
-        // padding-bottom: 100px;
     }
 
     &__text {
@@ -42,7 +35,7 @@
 
         &-header {
             font-weight: bold;
-            font-size: 12px;
+            font-size: rem(12px);
             line-height: 15px;
             text-transform: uppercase;
             color: $dark100;
@@ -73,7 +66,7 @@
 
         &-header {
             font-weight: bold;
-            font-size: 12px;
+            font-size: rem(12px);
             line-height: 15px;
             text-transform: uppercase;
             color: $dark100;

@@ -1,4 +1,4 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 .checkbox {
     &__wrapper {
         position: relative;
@@ -34,7 +34,6 @@
 
     &__text {
         display: flex;
-        font-size: 14px;
         line-height: 18px;
         color: $dark50;
         margin-right: 10px;

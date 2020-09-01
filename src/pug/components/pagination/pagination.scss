@@ -1,8 +1,6 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
+
 .pagination {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
     &__list {
         display: flex;
     }
@@ -29,12 +27,12 @@
             text-transform: lowercase;
             background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
             color: #ffffff;
-            font-size: 24px;
+            font-size: rem(24px);
             line-height: 20px;
-            font-weight: normal;
+
             .pagination__link {
                 color: #ffffff;
-                font-size: 24px;
+                font-size: rem(24px);
                 line-height: 20px;
             }
         }
@@ -43,7 +41,7 @@
     &__link {
         color: $dark50;
         line-height: 15px;
-        font-size: 12px;
+        font-size: rem(12px);
     }
 
     &__note {
