@@ -18,11 +18,7 @@ import './../../components/pagination/pagination.js';
 import './../../components/bullet-list/bullet-list.js';
 import './../../components/rich-checkbox/rich-checkbox.js';
 import './../../components/comments/comments.js';
-import './../../components/head/head.js';
 
-//1 пример
 $(function(){
     $("#masked-textfield").mask("99.99.9999", {placeholder: "ДД.ММ.ГГГГ" });
 });
-
-console.log('elements');

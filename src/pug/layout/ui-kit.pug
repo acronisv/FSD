@@ -1,8 +1,10 @@
+include ../components/ui-head/ui-head
+
 block variables
 
 doctype html
 html(lang='en')
   include ../components/head/head
   body
-    .site-wrapper
-      block content
+    +ui-head
+    block content

@@ -1,4 +1,4 @@
-extend ../../layout/main
+extend ../../layout/ui-kit
 include ../../components/dropdown/dropdown
 include ../../components/input/input
 include ../../components/field-subscribe/field-subscribe
@@ -16,14 +16,12 @@ include ../../components/pagination/pagination
 include ../../components/bullet-list/bullet-list
 include ../../components/rich-checkbox/rich-checkbox
 include ../../components/comments/comments
-include ../../components/head/head
 
 block variables
     - var title = "Form elements"
     - var description = "Form elements page"
 
 block content
-        +head
         .form-elements
             .form-elements__wrapper.form-elements__wrapper--group1
                 .form-elements__item
