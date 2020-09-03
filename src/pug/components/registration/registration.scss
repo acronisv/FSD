@@ -1,3 +1,5 @@
+@import './../../../assets/scss/main.scss';
+
 .registration {
     width: 380px;
     padding: 40px 30px 30px 30px;
@@ -7,7 +9,11 @@
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+
     &__header {
+        font-family: $subFont;
+        font-size: rem(24px);
+        line-height: 30px;
         margin-bottom: 14px;
     }
 
@@ -26,15 +32,15 @@
     }
 
     &__surname {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     &__gender {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
     }
 
     &__date {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
     &__email{

@@ -1,12 +1,12 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
+
 .btn {
+    font-family: $mainFont;
     height: 44px;
     background: $gradient;
     border-radius: 22px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: rem(12px);
     line-height: 15px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -16,6 +16,7 @@
     &--bordered {
         padding: 2px;     
     }
+
     &__title{
         display: flex;
         align-items: center;
@@ -45,13 +46,14 @@
     
     &--submit {
         width: 100%;
+
         &:after {
             content: 'arrow_forward';
             position: absolute;
             font-family: 'Material Icons';
             display: inline-block;
             right: 10px;
-            font-size: 23px;
+            font-size: rem(23px);
             text-transform: lowercase;
             font-weight: normal;
         }

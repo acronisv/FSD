@@ -1,0 +1,28 @@
+@import './../../../assets/scss/main.scss';
+
+.main {
+    background-image: url('img/landing-bg.png');
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+    line-height: 24px;
+
+    &__wrap {
+        @extend .container;
+        min-height: 829px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .room-search {
+        margin-top: 70px;
+    }
+
+    &__note {
+        text-align: right;
+        min-width: 300px;
+        margin: auto 0 21px auto;
+        color: $dark75;
+    }
+}

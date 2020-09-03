@@ -1,5 +1,6 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 .comment {
+    line-height: 24px;
     &__wrap {
         display: flex;
     }

@@ -1,0 +1,123 @@
+@import './../../../assets/scss/main.scss';
+
+.room-details {
+    border-bottom: 1px solid rgba(31,32,65,.25);
+
+    &__gallery {
+        display: flex;
+        justify-content: center;
+
+        &-main {
+            flex-basis: 983px;
+            background-image: url('./img/img-main.png');
+        }
+
+        &-secondary {
+            display: flex;
+            flex-basis: 457px;
+            flex-direction: column;
+        }
+
+        &-top {
+            display: flex;
+            flex-basis: 243px;
+            width: 100%;
+            background-image: url('./img/img-1.png');
+        }
+
+        &-bottom {
+            display: flex;
+            flex-basis: 242px;
+            width: 100%;
+            background-image: url('./img/img-2.png');
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }    
+
+    &__wrap {
+        @extend .container;
+        padding-top: 70px;
+        padding-bottom: 61px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 280px;
+        margin-right: 81px;
+
+        .information:last-child {
+            margin-bottom: 15px;
+            border: none;
+        }
+    }
+
+    &__content {
+        max-width: 710px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__reviews {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        justify-content: space-between;
+
+        .room-details__header {
+            margin-bottom: 20px;
+        }
+
+        &-count {
+            line-height: 14px;
+            color: $dark50;
+            margin-top: 6px;
+        }
+    }
+
+    .comment {
+        margin-bottom: 23px;
+    }
+
+    &__header {
+        font-family: $subFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(19px);
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+
+    &__notes {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    &__rules {
+        max-width: 262px;
+
+        .room-details__header {
+            margin-left: 20px;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__cancel {
+        max-width: 341px;
+        margin-right: 8px;
+
+        .room-details__header {
+            margin-bottom: 17px;
+        }
+
+        &-text {
+            line-height: 24px;
+            color: $dark75;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+mixin rating({stars='3'})
+    .rating__wrapper
+        - function count(){
+            - var val= 'star'
+                - for (var j=0; j<stars; j++) {
+                    span.rating__value= val
+                - }
+                - val = 'star_border'
+                - for (var i=0; i<5-stars; i++) {
+                    span.rating__value= val
+                - }
+        - }
+        if stars > 5
+            - stars=5
+            - count()
+        else
+            - count()
+            

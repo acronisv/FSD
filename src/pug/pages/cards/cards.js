@@ -1,5 +1,4 @@
 import './cards.scss';
-import './../../components/head/head.js';
 import './../../components/room-search/room-search.js';
 import './../../components/calendar/calendar.js';
 import './../../components/dropdown/dropdown.js';
@@ -11,7 +10,7 @@ import './../../components/toggle/toggle.js';
 import './../../components/booking/booking.js';
 import './../../components/login/login.js';
 import './../../components/room-card/room-card.js';
-import './../../components/rate-btn/rate-btn.js';
+import './../../components/rating/rating.js';
 
 $('.cards__datepicker').datepicker({
     onSelect: function (fd, d, picker) { 
@@ -22,6 +21,9 @@ $('.cards__datepicker').datepicker({
     multipleDatesSeparator: ' - ',
     clearButton: 'true',
     todayButton: 'true',
+    dateFormat: 'd M',
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>',
     navTitles: {
         days: 'MM yyyy'
     },

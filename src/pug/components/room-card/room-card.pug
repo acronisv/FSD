@@ -1,4 +1,4 @@
-mixin room-card({img=[], id=888, classs='люкс', price='9 990' ,reviews='145'})
+mixin room-card({img=[], id=888, status='', price='9 990', reviews='145', stars='4'})
     .room-card
         .room-card__slider
             each item,i in img
@@ -8,13 +8,13 @@ mixin room-card({img=[], id=888, classs='люкс', price='9 990' ,reviews='145'
                 .room-card__number
                     span.room-card__text  №
                     span.room-card__id= id
-                    span.room-card__class= classs
+                    span.room-card__class= status
                 .room-card__price
                     span.room-card__amount= price
                     span.room-card__interval в сутки
         .room-card__rating
             .room-card__vote
-                +rate-btn
+                +rating({stars:stars})
             .room-card__reviews
                 span.room-card__review-quantity= reviews
                 span.room-card__review-text Отзывов

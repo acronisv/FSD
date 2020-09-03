@@ -1,0 +1,20 @@
+extend ../../layout/main
+include ../../components/header/header
+include ../../components/button/button
+include ../../components/footer/footer
+include ../../components/field-subscribe/field-subscribe
+include ../../components/room-search/room-search
+include ../../components/calendar/calendar
+include ../../components/dropdown/dropdown
+
+block variables
+    - var title = "Landing page"
+    - var description = "Main toxin page"
+
+block content
+    +header({})
+    main.content.main
+        .main__wrap
+            +room-search
+            p.main__note Лучшие номера для вашей работы,<br> отдыха и просто вдохновения
+    +footer

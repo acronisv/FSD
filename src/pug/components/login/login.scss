@@ -1,4 +1,4 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
 
 .login {
     padding: 40px 30px 30px 30px;
@@ -10,6 +10,10 @@
     border: 1px solid rgba(0,0,0,.12);
 
     &__header {
+        font-family: $subFont;
+        font-weight: bold;
+        font-size: rem(24px);
+        line-height: 30px;
         margin-bottom: 14px;
     }
 
@@ -26,6 +30,10 @@
     }
 
     &__option {
+        &-link {
+            line-height: 18px;
+        }
+
         display: flex;
         justify-content: space-between;
         align-items: center;

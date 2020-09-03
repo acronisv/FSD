@@ -1,0 +1,88 @@
+@import './../../../assets/scss/main.scss';
+
+.search-page {
+    border-bottom: 1px solid $dark25;
+
+    &__wrap {
+        @extend .container;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 73px;
+    }
+
+    &__filter {
+        width: 266px;
+        margin-right: 60px;
+    }
+
+    &__header {
+        font-family: $subFont;
+        font-weight: bold;
+        font-size: rem(24px);
+        line-height: 30px;
+        flex-basis: 100%;
+        margin-bottom: 21px;
+    }
+
+    &__results {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 834px;
+        justify-content: space-between;
+    }
+
+    &__pagination {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        padding-top: 19px;
+        margin-left: -8px;
+    }
+
+    .room-card {
+        margin-bottom: 20px;
+    }
+}
+
+.room-filter {
+    &__item{
+
+        &--calendar {
+            margin-bottom: 21px;
+        }
+
+        &--guests {
+            margin-bottom: 26px;
+        }
+
+        &--price {
+            margin-bottom: 24px;
+        }
+
+        &--checkbox-group {
+            margin-bottom: 32px;
+        }
+
+        &--availability {
+            margin-bottom: 30px;
+        }
+
+        &--comfort {
+            margin-bottom: 30px;
+        }
+
+        &-header{
+            font-weight: 700;
+            line-height: 15px;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+
+        &-text {
+            line-height: 14px;
+            color: $dark50;
+            font-size: rem(12px);
+            padding: 6px 0;
+        }
+    }
+}

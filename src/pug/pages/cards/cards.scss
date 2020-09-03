@@ -1,5 +1,4 @@
 @import './../../../assets/scss/main.scss';
-@import './../../../assets/scss/utils/vars.scss';
 
 .cards {
     @extend .container;
@@ -18,11 +17,11 @@
 }
 
 .room-search {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 }
 
 .booking {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 }
 
 .room-card {

@@ -1,0 +1,15 @@
+@import './../../../assets/scss/main.scss';
+
+.registry {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    background-image: url('./img/reg-bg.png');
+    background-position: center bottom;
+    background-size: cover;
+
+    .registration {
+        margin-left: 6px;
+    }
+}

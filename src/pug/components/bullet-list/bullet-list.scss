@@ -1,8 +1,10 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
+
 .bullet-list {
+    line-height: 24px;
     &__title {
         font-weight: 700;
-        font-size: 12px;
+        font-size: rem(12px);
         line-height: 15px;
         text-transform: uppercase;
         margin-bottom: 13px;
@@ -10,6 +12,7 @@
     &__item {
         display: flex;
         margin-bottom: 10px;
+        color: $dark75;
         &:before {
             content:'';
             display: inline-block;

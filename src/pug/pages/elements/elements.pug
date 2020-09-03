@@ -1,4 +1,4 @@
-extend ../../layout/main
+extend ../../layout/ui-kit
 include ../../components/dropdown/dropdown
 include ../../components/input/input
 include ../../components/field-subscribe/field-subscribe
@@ -9,21 +9,19 @@ include ../../components/information/information
 include ../../components/radio/radio
 include ../../components/toggle/toggle
 include ../../components/like-btn/like-btn
-include ../../components/rate-btn/rate-btn
+include ../../components/rating/rating
 include ../../components/range-slider/range-slider
 include ../../components/button/button
 include ../../components/pagination/pagination
 include ../../components/bullet-list/bullet-list
 include ../../components/rich-checkbox/rich-checkbox
 include ../../components/comments/comments
-include ../../components/head/head
 
 block variables
     - var title = "Form elements"
     - var description = "Form elements page"
 
 block content
-        +head
         .form-elements
             .form-elements__wrapper.form-elements__wrapper--group1
                 .form-elements__item
@@ -48,7 +46,7 @@ block content
                 .form-elements__item.form-elements__item--small-width.form-elements__item--expandable-list
                     +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'], names:['breakfast','table','chair','bed','tv','shampoo','tv','shampoo']})
                 .form-elements__item.form-elements__item--small-width
-                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь','Телевизор','Шампунь']})
+                    +checkbox-list({items:['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь']})
                 .form-elements__item.form-elements__item--small-width.form-elements__item--information
                     +information({title:'Комфорт', text:'Шумопоглощающие стены'})
                     +information({title:'Удобство', text:'Окно в каждой из спален', icon:'location_cityicon'})
@@ -70,7 +68,7 @@ block content
                     +like-btn
                 .form-elements__item
                     .form-elements__title= 'Rate button'
-                    +rate-btn
+                    +rating({})
             .form-elements__wrapper.form-elements__wrapper--group4
                 .form-elements__item.form-elements__item--small-width.form-elements__item--range-slider
                     +range-slider({})
@@ -96,4 +94,4 @@ block content
                     +rich-checkbox({items:['Широкий коридор','Помощник для инвалида'], desc:['Ширина коридоров в номере не менее 91 см.','На 1 этаже вас встретит специалист и проводит до номера.']})
             .form-elements__wrapper.form-elements__wrapper--group7
                 .form-elements__item.form-elements__item--wide
-                    +comments()
+                    +comments({})

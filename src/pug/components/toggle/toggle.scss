@@ -1,4 +1,5 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
+
 .toggle {
     &__wrapper {
         position: relative;
@@ -13,10 +14,13 @@
         position: absolute;
         left: -1000px;
         opacity: 0;
+
         &:checked + .toggle__text {
+
             &:before {
                 border: 1px solid $primary;
             }
+
             &:after {
                 display: block;
                 position: absolute;
@@ -30,7 +34,6 @@
 
     &__text {
         display: flex;
-        font-size: 14px;
         line-height: 18px;
         color: $dark75;
         margin-right: 10px;

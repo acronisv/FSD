@@ -1,0 +1,21 @@
+mixin pie-chart(vote)
+    - var {best=25, good=25, normal=50, bad=0} = vote
+    - var circleLenght = 100 
+    - var gap = 0.7
+    .pie-chart
+        .pie-chart__svg
+            svg.pie(width='120' height='120' viewbox='0 0 33 33')
+                circle.pie-hole(cx='50%' cy='50%' r='15.91549430918954' fill='#fff')
+                circle.pie-ring(cx='50%' cy='50%' r='15.91549430918954' fill='transparent' stroke='#ffffff' stroke-width='1')
+                circle.pie-segment(cx='50%' cy='50%' r='15.91549430918954' fill='transparent' stroke='#a3a0fc' stroke-width='1' stroke-dasharray=`${best-gap} ${100-best+gap}` stroke-dashoffset='25')
+                circle.pie-segment(cx='50%' cy='50%' r='15.91549430918954' fill='transparent' stroke='#6bd0b8' stroke-width='1' stroke-dasharray=`${good-gap} ${100-good+gap}` stroke-dashoffset='0')
+                circle.pie-segment(cx='50%' cy='50%' r='15.91549430918954' fill='transparent' stroke='#ffce9c' stroke-width='1' stroke-dasharray=`${normal-gap} ${100-normal+gap}` stroke-dashoffset='-25')
+            .pie-chart__info
+                span.pie-chart__number 260
+                p.pie-chart__text голосов
+        .pie-chart__legend
+            ul.pie-chart__list
+                li.pie-chart__item.pie-chart__item--best Великолепно
+                li.pie-chart__item.pie-chart__item--good Хорошо
+                li.pie-chart__item.pie-chart__item--normal Удовлетворительно
+                li.pie-chart__item.pie-chart__item--bad Разочарован

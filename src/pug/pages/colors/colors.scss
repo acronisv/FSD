@@ -1,11 +1,14 @@
-@import './../../../assets/scss/utils/vars.scss';
+@import './../../../assets/scss/main.scss';
+
 .page-types {
-    font-family: 'OpenSans';
-    padding: 145px 0;
+    @extend .container;
     display: flex;
     justify-content: space-between;
 }
+
 .colors {
+    font-family: $subFont;
+
     &__item {
         width: 70px;
         height: 70px;
@@ -22,33 +25,43 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            padding: 7px 0 6px 0;
         }
 
         &-heading {
-            font-weight: bold;  
+            font-weight: bold; 
+            font-size: 19px; 
         }
 
         &-text {
             font-size: 19px;
         }
     }
+
     &__item--shade75{
         background: $dark75;
     }
+    
     &__item--shade50{
         background: $dark50;
     }
+
     &__item--shade5{
         background: $dark5;
     }
+
     &__item--green{
         background: #BC9CFF;
     }
+
     &__item--purple{
         background: #6FCF97;
     }
 }
+
 .headings {
+    margin-right: 60px;
+
     &__item {
         display: flex;
         margin-bottom: 50px;
@@ -62,31 +75,46 @@
 
         &--h1 {
             font-size: $h1FontSize;
+            line-height: 29px;
         }
         
         &--h2 {
             font-size: $h2FontSize;
+            line-height: 23px;
         }
 
-        &--h3 {
+        &--label {
             font-size: $h3FontSize;
+            line-height: 15px;
         }
 
         &--p {
             font-size: $mainFontSize;
+            line-height: 24px;
         }
     }
 
     &__text{
-        &--bold {
-            font-weight: bold ;
+        max-width: 336px;
+
+        &--h1 {
+            font-family: $subFont;
+            font-weight: bold;
+            font-size: rem(24px);
+            line-height: 30px;
         }
 
-        &--ff-montserrat {
-            font-family: 'Montserrat';
+        &--h2 {
+            font-family: $subFont;
+            font-weight: bold;
+            font-size: rem(19px);
+            line-height: 24px;
         }
-        &--uppercase {
+        &--label {
+            font-weight: bold;
             text-transform: uppercase;
+            font-size: rem(12px);
+            line-height: 15px;
         }
     }
 }

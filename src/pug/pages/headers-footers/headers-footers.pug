@@ -1,5 +1,4 @@
-extend ../../layout/main
-include ../../components/head/head
+extend ../../layout/ui-kit
 include ../../components/header/header
 include ../../components/button/button
 include ../../components/footer/footer
@@ -11,7 +10,6 @@ block variables
 
 block content
     .page-wrap
-        +head
         +header({})
         +header({state:'logged', name:'Юлий Цезарь'})
         +footer

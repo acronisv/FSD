@@ -1,10 +1,11 @@
-@import './../../../assets/scss/utils/vars.scss';
-.rate {
+@import './../../../assets/scss/main.scss';
+
+.rating {
     &__value {
         display: inline-block;
         font-family: 'Material Icons';
-        cursor: pointer;
-        font-size: 24px;
+        cursor: default;
+        font-size: rem(24px);
         color: $primary;
     }
 }
