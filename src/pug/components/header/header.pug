@@ -5,20 +5,21 @@ mixin header({state='', name =''})
                 .header__logo
                     a.header__logo-link(href="/")
                         include ../../components/header/img/logo.svg
-                nav.header__nav.main-nav
-                    ul.main-nav__list
-                        li.main-nav__item.main-nav__item--active
-                            a(href="#").main-nav__link О нас
-                        li.main-nav__item.main-nav__item--dropdown
-                            a(href="#").main-nav__link Услуги
-                        li.main-nav__item
-                            a(href="#").main-nav__link Вакансии
-                        li.main-nav__item 
-                            a(href="#").main-nav__link Новости
-                        li.main-nav__item.main-nav__item--dropdown
-                            a(href="#").main-nav__link Соглашения
-                .header__login
-                    p.header__login-name= name
+                .header__mobile-wrap
+                    nav.header__nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item.main-nav__item--active
+                                a(href="#").main-nav__link О нас
+                            li.main-nav__item.main-nav__item--dropdown
+                                a(href="#").main-nav__link Услуги
+                            li.main-nav__item
+                                a(href="#").main-nav__link Вакансии
+                            li.main-nav__item 
+                                a(href="#").main-nav__link Новости
+                            li.main-nav__item.main-nav__item--dropdown
+                                a(href="#").main-nav__link Соглашения
+                    .header__login
+                        p.header__login-name= name
                     
     else
         .header
@@ -26,18 +27,24 @@ mixin header({state='', name =''})
                 .header__logo
                     a.header__logo-link(href="/")
                         include ../../components/header/img/logo.svg
-                nav.header__nav.main-nav
-                    ul.main-nav__list
-                        li.main-nav__item.main-nav__item--active
-                            a(href="#").main-nav__link О нас
-                        li.main-nav__item.main-nav__item--dropdown
-                            a(href="#").main-nav__link Услуги
-                        li.main-nav__item
-                            a(href="#").main-nav__link Вакансии
-                        li.main-nav__item 
-                            a(href="#").main-nav__link Новости
-                        li.main-nav__item.main-nav__item--dropdown
-                            a(href="#").main-nav__link Соглашения
-                .header__login
-                    +button({title: 'Войти', type: 'bordered'})
-                    +button({title: 'Зарегистрироваться', type: 'submit'})
+                .header__burger
+                    button.header__burger-btn
+                        span.header__burger-dash
+                        span.header__burger-dash
+                        span.header__burger-dash
+                .header__mobile-wrap
+                    nav.header__nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item.main-nav__item--active
+                                a(href="#").main-nav__link О нас
+                            li.main-nav__item.main-nav__item--dropdown
+                                a(href="#").main-nav__link Услуги
+                            li.main-nav__item
+                                a(href="#").main-nav__link Вакансии
+                            li.main-nav__item 
+                                a(href="#").main-nav__link Новости
+                            li.main-nav__item.main-nav__item--dropdown
+                                a(href="#").main-nav__link Соглашения
+                    .header__login
+                        +button({title: 'Войти', type: 'bordered'})
+                        +button({title: 'Зарегистрироваться', type: 'submit'})

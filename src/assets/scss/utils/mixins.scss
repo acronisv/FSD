@@ -12,6 +12,10 @@
   @return $pixels / $context * 1rem;
 }
 
+@function em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+
 // size to one line
 @mixin size($width, $height: $width) {
   width: $width;

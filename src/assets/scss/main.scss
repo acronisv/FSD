@@ -8,15 +8,15 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
+  // @media screen and (max-width: $desktopWidth) {
+  //   font-size: 16px;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   font-size: 15px;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+  //   font-size: 14px;
+  // }
 }
 
 body {
@@ -106,17 +106,18 @@ li {
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
+  min-width: 280px;
   max-width: $desktopWidth;
-  padding: 0 60px;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: $tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: $phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
-  }
+  padding: 0 20px;
+  // @media screen and (max-width: $smDesktopWidth) {
+  //   max-width: $smDesktopWidth - 40px;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   max-width: $tableWidth - 40px;
+  // }
+  // @media screen and (max-width: $smPhoneWidth) {
+  //   max-width: $smPhoneWidth - 40px;
+  // }
 }
 
 .material-icons {
