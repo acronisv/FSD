@@ -11,21 +11,21 @@
     }
 
     &__text {
-        width: 260px;
+        max-width: 260px;
         line-height: 24px;
     }
 
     &__main {
-        padding-top: 104px;
-        padding-bottom: 83px;
+        padding-top: 7.429em;
+        padding-bottom: 5.929em;
         border-bottom: 1px solid $dark25;
     }
 
     &__logo {
-        margin-top: -4px;
-        margin-right: 40px;
+        margin-top: -0.286em;
+        margin-right: 2.857em;
         &-img {
-            margin-bottom: 18px;
+            margin-bottom: 1.286em;
         }
     }
 
@@ -39,7 +39,7 @@
             line-height: 15px;
             text-transform: uppercase;
             color: $dark100;
-            margin-bottom: 19px;
+            margin-bottom: 1.583em;
         }
 
         &-column {
@@ -47,7 +47,7 @@
         }
 
         &-item {
-            margin-bottom: 14px;
+            margin-bottom: 1em;
         }
 
         &-link {
@@ -60,7 +60,7 @@
     }
 
     &__subscribtion {
-        width: 260px;
+        max-width: 260px;
         line-height: 17px;
         color: $dark50;
 
@@ -70,13 +70,13 @@
             line-height: 15px;
             text-transform: uppercase;
             color: $dark100;
-            margin-bottom: 20px;
+            margin-bottom: 1.667em;
         }
 
         &-text {
             line-height: 24px;
             color: $dark75;
-            margin-bottom: 17px;
+            margin-bottom: 1.214em;
         }
     }
 
@@ -84,8 +84,8 @@
         box-shadow: 0px 10px 20px $dark5;
         .footer__wrap {
             justify-content: space-between;
-            padding-top: 23px;
-            padding-bottom: 23px;
+            padding-top: 1.643em;
+            padding-bottom: 1.643em;
         }
     }
 
@@ -94,6 +94,62 @@
     }
 
     &__icon {
-        margin-left: 22px;
+        margin-left: 1.571em;
+    }
+}
+
+@media screen and (max-width: $tableWidth) {
+    .footer {
+        &__logo {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $smTableWidth) {
+    .footer {
+        &__text {
+            display: none;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__subscribtion {
+            display: none;
+        }
+
+        &__logo {
+            margin: 0 auto;
+        }
+
+        &__main {
+            padding-top: 8.571em;
+            padding-bottom: 0;
+            border: none;
+        }
+
+        &__bottom {
+            .footer__wrap {
+                padding-top: 0;
+                flex-direction: column;
+                padding-bottom: 8.571em;
+            }
+        }
+
+        &__copyright {
+            align-self: center;
+            margin-bottom: 1.429em;
+        }
+
+        &__social {
+            align-self: center;
+            margin-bottom: 0;
+
+            .footer__icon:first-child {
+                margin-left: 0;
+            }
+        }
     }
 }
