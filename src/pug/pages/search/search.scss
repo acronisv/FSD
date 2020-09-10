@@ -7,12 +7,17 @@
         @extend .container;
         display: flex;
         padding-top: 30px;
-        padding-bottom: 73px;
+        padding-bottom: 72px;
+        justify-content: space-between;
+    }
+    
+    &__filter-btn {
+        display: none;
     }
 
     &__filter {
-        width: 266px;
-        margin-right: 60px;
+        width: 286px;
+        flex-shrink: 0;
     }
 
     &__header {
@@ -29,7 +34,15 @@
         flex-wrap: wrap;
         max-width: 834px;
         justify-content: space-between;
+        //margin-left: 20px;
     }
+
+    // &__list {
+    //     display: grid;
+    //     grid-row-gap: 20px;
+    //     grid-column-gap: 12px;
+    //     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    // }
 
     &__pagination {
         display: flex;
@@ -40,13 +53,14 @@
     }
 
     .room-card {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 }
 
 .room-filter {
-    &__item{
+    padding-right: 20px;
 
+    &__item{
         &--calendar {
             margin-bottom: 21px;
         }
@@ -83,6 +97,74 @@
             color: $dark50;
             font-size: rem(12px);
             padding: 6px 0;
+        }
+    }
+}
+
+@media screen and (max-width: $desktopWidth) {
+    .search-page {
+        &__results {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (max-width: $tableWidth) {
+    body.lock {
+        overflow: hidden;
+    }
+    .search-page {
+        position: relative;
+        &__results {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__filter-btn {
+            display: block;
+            position: fixed;
+            left: 20px;
+            top: 180px;
+            font-size: 2em;
+            z-index:20;
+            background: transparent;
+            font-family: 'Material Icons';
+            border-radius: 50%;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            background-color: $primary;
+
+            &--active {
+                top: 0;
+                left: 240px;
+                background-color: #ffffff;
+                color: $primary;
+            }
+        }
+    }
+
+    .room-filter {
+        display: none;
+        position: fixed;
+        z-index: 15;
+        left: 0;
+        top: 0;
+        background: #ffffff;
+        padding-right: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.25);
+
+        &--active {
+            display: block;
+            overflow: scroll;
+            height: 100%;
+        }
+
+        &__wrap {
+            padding: 20px 20px;
+            max-width: 280px;
+            background-color: #ffffff;
         }
     }
 }

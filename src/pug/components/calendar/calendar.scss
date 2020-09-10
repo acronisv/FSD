@@ -7,6 +7,7 @@
     &--single{
         .calendar__elem, .calendar__item-wrap {
             width: 100%;
+            max-width: none;
         }
     }
  
