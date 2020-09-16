@@ -60,3 +60,9 @@
         margin-bottom: 30px;
     }
 }
+
+@media screen and (max-width: $smTableWidth) {
+    .registry .registration {
+        margin-left: 0;
+    }
+}
