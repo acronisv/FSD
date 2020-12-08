@@ -1,7 +1,7 @@
 @import './../../../assets/scss/main.scss';
 
 .main {
-    background-image: url('img/landing-bg.png');
+    background-image: url('../img/landing-bg.png');
     background-position-y: bottom;
     background-position-x: center;
     background-size: cover;
@@ -16,7 +16,7 @@
         flex-direction: column;
     }
     .room-search {
-        margin-top: 70px;
+        margin-top: 68px;
     }
 
     &__note {

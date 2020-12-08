@@ -7,6 +7,7 @@
     &--single{
         .calendar__elem, .calendar__item-wrap {
             width: 100%;
+            max-width: none;
         }
     }
  
@@ -21,13 +22,15 @@
 
     &__elem {
         color: $dark75;
-        width: 150px;
+        width: 100%;
+        max-width: 150px;
         height: 44px;
         background: transparent;
         border: 1px solid $dark25;
         box-sizing: border-box;
         border-radius: 4px;
         padding: 13px 15px;
+        z-index: 1;
     }
 
     &__item-wrap {
@@ -43,7 +46,6 @@
         right: 0;
         bottom: 0;
         background-color: transparent;
-        z-index: -1;
 
         &:before {
             position: absolute;

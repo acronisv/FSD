@@ -6,9 +6,14 @@
     background: #ffffff;
     box-shadow: 0px 10px 20px $dark5;
     padding: 15px 0;
+
     &__wrap {
         display: flex;
         @extend .container;
+    }
+
+    &__mobile-wrap {
+        display: flex;
     }
 
     &__logo {
@@ -28,23 +33,49 @@
         }
     }
     .btn {
-        height: 34px;
+        height: 2.833em;
 
         &__title {
-            height: 30px;
-            padding: 0 18px;
+            height: 2.5em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
         }
 
         &--bordered {
-            margin-right: 20px
+            margin-right: 1.667em;
         }
     }
 
     .btn--submit {
-        width: 196px;
+        padding: 0 1.667em;
+        max-width: 196px;
 
         &:after {
             display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+        position: relative;
+
+        &-btn {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: none;
+        }
+        &-dash {
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
+            background: $primary;
+        }
+        &--active {
+            
         }
     }
 
@@ -60,7 +91,7 @@
     }
 
     &__item {
-        margin-right: 20px;
+        margin-right: 1.429em;
 
         &--active {
             .main-nav__link{
@@ -93,3 +124,75 @@
         }
     }
 }
+
+@media screen and (max-width: $tableWidth) {
+    .header {
+        position: relative;
+
+        &__mobile-wrap {
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 1.429em;
+            z-index: 30;
+            width: 100%;
+            top: 55px;
+            left: 0;
+            background-color: #ffffff;
+            border-top: 1px solid rgba(0,0,0,.12);
+            border-bottom: 1px solid rgba(0,0,0,.12);
+            box-shadow: 0 1px 0 rgba(31,32,65,.1);
+
+            &--active {
+                display: flex;
+            }
+        }
+
+        &__login-name {
+            border-left: none;
+        }
+
+        &__burger {
+            display: flex;
+
+            &--active {
+                .header__burger-dash:first-child {
+                    transform: rotate(45deg);
+                    top: 18px;
+                    position: absolute;
+                }
+    
+                .header__burger-dash:nth-child(2) {
+                    display: none;
+                }
+    
+                .header__burger-dash:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        
+    }
+
+    .main-nav {
+        font-size: 1.357rem;
+
+        &__list {
+            flex-direction: column;
+            margin-bottom: 0.5em;
+        }
+
+        &__item {
+            margin-bottom: 0.714em;
+        }
+    }
+        
+}
+
+// @media screen and (max-width: $tableWidth) {
+//     .main-nav {
+//         display: none;
+//     }
+// }

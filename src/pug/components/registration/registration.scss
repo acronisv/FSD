@@ -23,7 +23,8 @@
         align-items: center;
 
         .btn__title {
-            padding: 0 23px;
+            padding-left: 2em;
+            padding-right: 2em;
         }
     }
 
@@ -57,5 +58,11 @@
 
     &__pay {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: $smTableWidth) {
+    .registry .registration {
+        margin-left: 0;
     }
 }

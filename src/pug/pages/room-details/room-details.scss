@@ -9,7 +9,7 @@
 
         &-main {
             flex-basis: 983px;
-            background-image: url('./img/img-main.png');
+            background-image: url('../img/img-main.png');
         }
 
         &-secondary {
@@ -22,14 +22,14 @@
             display: flex;
             flex-basis: 243px;
             width: 100%;
-            background-image: url('./img/img-1.png');
+            background-image: url('../img/img-1.png');
         }
 
         &-bottom {
             display: flex;
             flex-basis: 242px;
             width: 100%;
-            background-image: url('./img/img-2.png');
+            background-image: url('../img/img-2.png');
         }
     }
 
@@ -40,7 +40,7 @@
 
     &__wrap {
         @extend .container;
-        padding-top: 70px;
+        padding-top: 69px;
         padding-bottom: 61px;
         display: flex;
         justify-content: space-between;
@@ -56,10 +56,21 @@
         }
     }
 
+    &__vote {
+        margin-bottom: 20px;
+        max-width: 310px;
+        width: 100%;
+    }
+
     &__content {
         max-width: 710px;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    &__booking {
+        margin-left: 10px;
+        flex-basis: 380px;
     }
 
     &__reviews {
@@ -100,6 +111,7 @@
 
     &__rules {
         max-width: 262px;
+        margin-right: 10px;
 
         .room-details__header {
             margin-left: 20px;
@@ -121,3 +133,60 @@
         }
     }
 }
+
+@media screen and (max-width: $desktopWidth) {
+    .room-details {
+        &__wrap {
+            flex-direction: column-reverse;
+        }
+
+        &__booking {
+            display: flex;
+            justify-content: center;
+            margin-left:0;
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: $smTableWidth) {
+    .room-details {
+        &__gallery {
+            //display: none;
+        }
+
+        &__info {
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .room-details {
+        &__info {
+            margin-right: 0;
+        }
+
+        &__notes {
+            flex-direction: column;
+        }
+
+        &__reviews {
+            flex-direction: column;
+
+            &-count {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__rules {
+            .room-details__header {
+                margin-left: 0;
+            }
+        }
+    }
+} 

@@ -1,6 +1,7 @@
 @import './../../../assets/scss/main.scss';
 .booking {
-    width: 380px;
+    max-width: 380px;
+    flex-basis: 380px;
     padding: 44px 30px 30px 30px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -99,21 +100,20 @@
             margin-right: 4px;
         }
 
+        &-note {
+            font-family: 'Material icons';
+            font-size: rem(24px);
+            content: 'info_outline';
+            color: $dark25;
+            margin-left: auto;
+        }
+
         &-amount {
             position: relative;
             margin-left: auto;
 
             &:after {
                 content: '\20bd';
-            }
-
-            &:before {
-                font-family: 'Material icons';
-                font-size: rem(24px);
-                content: 'info_outline';
-                color: $dark25;
-                position: absolute;
-                right: 77px;
             }
         }
 
@@ -124,26 +124,26 @@
         }
     }
 
+    &__row-wrap {
+        display: flex;
+        width: 75.8%;
+    }
+
     &__additional-tax {
         display: flex;
         margin-bottom: 35px;
 
-        &-text {
-            width: 214px;
+        &-note {
+            font-family: 'Material icons';
+            font-size: rem(24px);
+            content: 'info_outline';
+            color: $dark25;
+            margin-left: auto;
         }
 
         &-amount {
             position: relative;
             margin-left: auto;
-
-            &:before {
-                font-family: 'Material icons';
-                font-size: rem(24px);
-                content: 'info_outline';
-                color: $dark25;
-                position: absolute;
-                right: 77px;
-            }
 
             &:after {
                 content: '\20bd\20';

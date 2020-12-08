@@ -12,3 +12,16 @@ import './../../components/rich-checkbox/rich-checkbox.js';
 import './../../components/pagination/pagination.js';
 import './../../components/room-card/room-card.js';
 import './../../components/rating/rating.js';
+
+$(document).ready(function(){
+    $('.search-page__filter-btn').click(function(event){
+        $('.room-filter').toggleClass('room-filter--active');
+        $('.search-page__filter-btn').toggleClass('search-page__filter-btn--active');
+        if ($('.search-page__filter-btn').hasClass('search-page__filter-btn--active')) {
+            $('.search-page__filter-btn').text('cancel');
+        } else {
+            $('.search-page__filter-btn').text('search')
+        }
+        $('body').toggleClass('lock');
+    })
+})

@@ -19,11 +19,15 @@ mixin booking
                     span.booking__cost-index 4 суток
                     span.booking__cost-amount 39 960
                 .booking__tax
-                    span.booking__tax-text Сбор за услуги:
-                    span.booking__tax-discount скидка 2 179
+                    .booking__row-wrap
+                        span.booking__tax-text Сбор за услуги:
+                        span.booking__tax-discount скидка 2 179
+                        span.booking__tax-note info_outline
                     span.booking__tax-amount 0
                 .booking__additional-tax
-                    span.booking__additional-tax-text Сбор за дополнительные услуги
+                    .booking__row-wrap
+                        span.booking__additional-tax-text Сбор за дополнительные услуги
+                        span.booking__additional-tax-note info_outline
                     span.booking__additional-tax-amount 300
                 .booking__total-price
                     span.booking__total-price-text Итого
