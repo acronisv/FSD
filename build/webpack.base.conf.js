@@ -7,8 +7,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Main consts
 const PATHS = {
-    src: path.join(__dirname, '../src'),
-    dist: path.join(__dirname, '../dist'),
+    src: path.resolve(__dirname, '../src'),
+    dist: path.resolve(__dirname, '../dist'),
     assets: 'assets/'
 }
 
@@ -62,14 +62,16 @@ module.exports = {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]'
+                    name: '[name].[ext]',
+                    //outputPath: 'assets/fonts',
                 }
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]'
+                    name: '[name].[ext]',
+                    outputPath: `${PATHS.assets}img`
                 }
             },
             {
@@ -81,6 +83,7 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
+                            //url: false
                         },
                     },
                     {
@@ -118,6 +121,11 @@ module.exports = {
             }
         ]
     },
+    // resolve: {
+    //     alias: {
+    //         'img': path.resolve(__dirname, `${PATHS.src}/assets/img`)
+    //     }
+    // },
     plugins: [
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}css/[name].css`
@@ -132,8 +140,10 @@ module.exports = {
         // }),
         new CopyWebpackPlugin([
             { 
+                //from: `${PATHS.src}/**/img/*`,
                 from: `${PATHS.src}/${PATHS.assets}img`,
-                to: `${PATHS.assets}img`
+                to: `${PATHS.assets}img`,
+                flatten: true
             },
             { 
                 from: `${PATHS.src}/${PATHS.assets}fonts`,
@@ -157,55 +167,55 @@ module.exports = {
         })),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/colors/colors.pug`,
-            filename: './colors/colors.html',
+            filename: './colors.html',
             chunks: ['colors', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/elements/elements.pug`,
-            filename: './elements/elements.html',
+            filename: './elements.html',
             chunks: ['elements', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/cards/cards.pug`,
-            filename: './cards/cards.html',
+            filename: './cards.html',
             chunks: ['cards', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/headers-footers/headers-footers.pug`,
-            filename: './headers-footers/headers-footers.html',
+            filename: './headers-footers.html',
             chunks: ['headers_footers', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/landing/landing.pug`,
-            filename: './landing/landing.html',
+            filename: './landing.html',
             chunks: ['landing', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/search/search.pug`,
-            filename: './search/search.html',
+            filename: './search.html',
             chunks: ['search', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/room-details/room-details.pug`,
-            filename: './room-details/room-details.html',
+            filename: './room-details.html',
             chunks: ['room_details', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/registry/registry.pug`,
-            filename: './registry/registry.html',
+            filename: './registry.html',
             chunks: ['registry', 'app'],
             inject: true
         }),
         new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/sign-in/sign-in.pug`,
-            filename: './sign-in/sign-in.html',
+            filename: './sign-in.html',
             chunks: ['sign_in', 'app'],
             inject: true
         }),
