@@ -83,7 +83,7 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                            //url: false
+                            url: false
                         },
                     },
                     {
@@ -140,8 +140,8 @@ module.exports = {
         // }),
         new CopyWebpackPlugin([
             { 
-                //from: `${PATHS.src}/**/img/*`,
-                from: `${PATHS.src}/${PATHS.assets}img`,
+                from: `${PATHS.src}/**/img/*`,
+                //from: `${PATHS.src}/${PATHS.assets}img`,
                 to: `${PATHS.assets}img`,
                 flatten: true
             },

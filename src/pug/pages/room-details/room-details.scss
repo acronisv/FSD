@@ -9,7 +9,7 @@
 
         &-main {
             flex-basis: 983px;
-            background-image: url('./img/img-main.png');
+            background-image: url('../img/img-main.png');
         }
 
         &-secondary {
@@ -22,14 +22,14 @@
             display: flex;
             flex-basis: 243px;
             width: 100%;
-            background-image: url('./img/img-1.png');
+            background-image: url('../img/img-1.png');
         }
 
         &-bottom {
             display: flex;
             flex-basis: 242px;
             width: 100%;
-            background-image: url('./img/img-2.png');
+            background-image: url('../img/img-2.png');
         }
     }
 
