@@ -16,3 +16,11 @@ npm run build
 
 - [jQuery Masked Input Plugin](https://github.com/digitalBush/jquery.maskedinput)
 - [jQuery datepicker](https://github.com/t1m0n/air-datepicker)
+- [Ion.RangeSlider](https://github.com/IonDen/ion.rangeSlider)
+
+## Figma layout
+<a href="https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id">UI kit</a>
+<a href="https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=18370%3A2">Pages</a>
+
+## Github pages
+https://acronisv.github.io/FSD/
