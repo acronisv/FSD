@@ -19,8 +19,8 @@ npm run build
 - [Ion.RangeSlider](https://github.com/IonDen/ion.rangeSlider)
 
 ## Figma layout
-[UI kit](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id)
-[Pages](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=18370%3A2)
+- [UI kit](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id)
+- [Pages](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=18370%3A2)
 
 ## Github pages
 https://acronisv.github.io/FSD/
