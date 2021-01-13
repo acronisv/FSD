@@ -20,8 +20,7 @@ npm run build
 
 ## Figma layout
 [UI kit](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id)
-<a href="https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id">UI kit</a><br>
-<a href="https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=18370%3A2">Pages</a>
+[Pages](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=18370%3A2)
 
 ## Github pages
 https://acronisv.github.io/FSD/
