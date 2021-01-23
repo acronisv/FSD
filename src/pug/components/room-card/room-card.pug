@@ -3,7 +3,7 @@ mixin room-card({img=[], id=888, status='', price='9 990', reviews='145', stars=
         .room-card__slider
             each item,i in img
                 .room-card__slider-item
-                    img(src=require('../../components/room-card/img/room'+img[i]+'.png').default)
+                    img(src=require('../../components/room-card/img/room'+img[i]+'.png').default, alt='room image')
         .room-card__description
                 .room-card__number
                     span.room-card__text  №

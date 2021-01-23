@@ -1,5 +1,5 @@
 mixin field-subscribe({type='text', name='name', id, label='subscription text field', placeholder='Email'})
-    form.subscribe__form(method="post" action="")
+    form.subscribe__form(method="post")
         label.subscribe__label(for=name)= label
         input.subscribe__elem(type=type, name=name, id=id, placeholder=placeholder)
         input.subscribe__button(type='submit' value="")
