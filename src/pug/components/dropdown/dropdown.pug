@@ -1,7 +1,7 @@
 mixin dropdown({label='label', id, name, option1='взрослые', option2='дети', option3='младенцы', placeholder="", buttons=""})
     .dropdown.js-dropdown
         .dropdown__content.js-dropdown__content
-            label.dropdown__label(for=name)= label
+            label.dropdown__label(for=id)= label
             input.dropdown__elem(id=id, placeholder=placeholder)
             button(type='button').dropdown__expand
         .dropdown__options.js-dropdown__options
